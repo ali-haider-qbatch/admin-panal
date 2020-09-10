@@ -1,0 +1,74 @@
+@import "../Modules/mixins";
+@import "../Modules/Variable";
+.Notification {
+  @include White-Background;
+  padding: 2rem;
+  border-radius: $border_Radius;
+  .form-control {
+    width: 50%;
+  }
+}
+.Notification-Button {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  .Schedule {
+    font-size: 0.75rem;
+    border-color: $Schedule;
+    background-color: transparent;
+    color: $Schedule;
+    padding: 0.3rem 1rem;
+  }
+  .Schedule:hover {
+    background-color: transparent;
+    color: $Schedule;
+    border-color: $Schedule;
+  }
+  .Schedule:focus {
+    box-shadow: none;
+    outline: 0;
+  }
+  .Cancel {
+    @include Cancel_button;
+  }
+  .Cancel:hover {
+    @include Cancel_button;
+  }
+  .Send {
+    @include Send_button;
+  }
+  .Send:hover {
+    @include Send_button;
+  }
+}
+#Hours-Modal {
+  .modal-content {
+    background-color: $Modal-background;
+  }
+  .modal-body {
+    padding: 2rem;
+  }
+  .modal-footer {
+    border-top: none;
+    justify-content: flex-start;
+    .Cancel {
+      @include Cancel_button;
+    }
+    .Send {
+      @include Send_button;
+    }
+  }
+  .form-check-input {
+    margin-top: 0.1rem;
+    width: 0.7rem;
+  }
+  .form-check-label {
+    font-size: $Small_font;
+  }
+}
+.MuiGrid-container .MuiInputBase-root {
+  font-size: 0.7rem;
+}
+#time {
+  font-size: 0.7rem;
+}

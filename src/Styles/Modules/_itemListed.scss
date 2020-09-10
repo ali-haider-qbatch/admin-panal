@@ -1,0 +1,58 @@
+@import "../Modules/mixins";
+@import "../Modules/Variable";
+.edit-button {
+  background-color: $primary-color;
+  @include function-button;
+}
+.Delete-button {
+  background-color: $Delete-button;
+  @include function-button;
+}
+.Add-button {
+  background-color: $Add-button;
+  @include function-button;
+}
+.ProductDetailButton:hover {
+  text-decoration: none;
+}
+.modal-para {
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+  margin-left: 0.8rem;
+}
+#Delete-Modal {
+  .Cancel {
+    background-color: $Cancel;
+    color: $black_color;
+    @include Cancel-Delete;
+  }
+  .Delete {
+    background-color: $Delete-button;
+    color: $White-color;
+    @include Cancel-Delete;
+  }
+}
+.Search_input_ListItem {
+  @include Search_inputs;
+}
+.dropdown .btn-outline-secondary {
+  border-color: $primary-color;
+}
+.dropdown .btn-outline-secondary:hover {
+  background-color: transparent;
+  border-color: $primary-color;
+  color: $black_color;
+}
+.dropdown-menu {
+  .form-check-label {
+    font-size: $Small_font;
+  }
+  .form-check-input {
+    margin-top: 1px;
+    width: 0.6rem;
+  }
+}
+.tableImg {
+  width: 1.25rem;
+  height: 1.25rem;
+}

@@ -1,0 +1,1066 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+.logo {
+  max-height: 3.1rem;
+  max-width: 3.1rem;
+  margin-left: 5rem;
+}
+
+.Box-Shadow {
+  -webkit-box-shadow: 0 0 10px #ccc;
+          box-shadow: 0 0 10px #ccc;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#body {
+  background-color: #edf0f7;
+  min-height: 100%;
+  font-family: "Work Sans", sans-serif;
+}
+
+form .form-control:focus {
+  background-color: transparent;
+  border-color: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Login-Screen-Header {
+  background-color: #fff;
+  width: 100%;
+  min-height: 50px;
+  -webkit-box-shadow: 0 0 10px #ccc;
+          box-shadow: 0 0 10px #ccc;
+  position: fixed;
+  z-index: 1;
+}
+
+.Logo {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.Login-font {
+  font-weight: 900;
+  font-size: 0.8rem;
+  padding: 0 2rem;
+}
+
+.Forget-Password {
+  font-size: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+  color: #5b5b5a;
+}
+
+.Forget-Password:hover {
+  text-decoration: none;
+  color: #5b5b5a;
+}
+
+.form-group label {
+  font-size: 10px;
+}
+
+.form-group .form-control {
+  font-size: 12px;
+  border: 1px solid #8894a5;
+}
+
+#DashboardButton {
+  background-color: #0a8dcd;
+  width: 100%;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.instructions {
+  font-size: 0.8125rem;
+  text-align: center;
+  width: 65%;
+  margin: 1.3rem auto;
+}
+
+@media (max-width: 767px) {
+  .instructions {
+    width: 100%;
+  }
+}
+
+.filters::after {
+  position: absolute;
+  right: 0.625rem;
+  top: 13px;
+}
+
+.SideBar {
+  width: 12.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #000;
+  float: left;
+  padding-top: 5rem;
+  position: fixed;
+  min-height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+#Dashboard {
+  width: calc(100% - 12.5rem);
+  float: right;
+  padding-top: 5rem;
+}
+
+.SideMenu {
+  width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #000;
+  float: left;
+  padding-top: 5rem;
+  position: fixed;
+  min-height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  #Dashboard {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .SideMenu {
+    width: 12.5rem;
+  }
+  .open {
+    width: 12.5rem;
+  }
+}
+
+.list-unstyled .dashboard-list .sidebar_Icon {
+  margin-right: 0.4rem;
+}
+
+.list-unstyled .dashboard-list .Dashboard-link {
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+.list-unstyled .dashboard-list .active {
+  border-left: 3px solid #098dcd;
+}
+
+.list-unstyled .dashboard-list .active .sidebar_Icon {
+  color: #0a8dcd;
+}
+
+.list-unstyled :hover {
+  text-decoration: none;
+}
+
+.list-unstyled .Dashboard-link:hover {
+  border-left: 3px solid #098dcd;
+}
+
+.list-unstyled .Dashboard-link:hover .sidebar_Icon {
+  color: #0a8dcd;
+}
+
+.filters::after {
+  position: absolute;
+  right: 0.625rem;
+  top: 13px;
+}
+
+.MainBoard {
+  background-color: #fff;
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+
+.Inner-Detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Inner-Detail .inner-svg {
+  width: 1.87rem;
+  height: 1.87rem;
+  background-color: #d4eaf6;
+  border-radius: 50%;
+  padding-left: 0.43rem;
+  padding-top: 0.06rem;
+  color: #49aada;
+  cursor: pointer;
+}
+
+.Inner-Detail .border-right {
+  border-right: 0.06rem solid #ccc;
+}
+
+.Inner-Detail .Caption {
+  color: #818181;
+}
+
+.Search_input {
+  position: relative;
+  background-color: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 10px #ccc;
+          box-shadow: 0 0 10px #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.Search_input .search_icon {
+  position: absolute;
+  top: 9px;
+  left: 7px;
+}
+
+.Search_input #search-bar {
+  background-color: transparent;
+}
+
+.Search_input #search-bar:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Search_input .list_icon {
+  position: absolute;
+  right: 2px;
+}
+
+.Dashboard-Table .Inner_Dashboard_table {
+  background-color: #fff;
+  display: revert;
+  font-size: 0.625rem;
+  text-align: left;
+}
+
+.Dashboard-Table .Inner_Dashboard_table .Table-header {
+  background: #fafbfb;
+}
+
+.dropdown .filters {
+  background-color: #fff;
+  font-size: 0.625rem;
+  padding: 7px 70px 6px 7px;
+  border: 1px solid #8894a5;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown .Button-icon {
+  vertical-align: text-bottom;
+}
+
+.dropdown .filters:hover {
+  background-color: #fff;
+  border: 1px solid #8894a5;
+}
+
+.OrderId {
+  color: #9ba2a7;
+  font-size: 0.625rem;
+}
+
+.Amount_Detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Inner-Body {
+  padding: 0px 5rem 5rem 5rem;
+}
+
+.Amount {
+  margin: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Inner_Summary {
+  background-color: #ebf1f5;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.Print_Button {
+  background-color: #37c28c;
+  font-size: 0.625rem;
+  color: #fff;
+  border: none;
+  height: 24px;
+  margin: 10px 6px;
+  border-radius: 0.31rem;
+  padding: 4px 24px;
+}
+
+.item {
+  margin-right: 2rem;
+}
+
+@media (max-width: 991px) {
+  .Dashboard-Table .Inner_Dashboard_table {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .dropdown .filters {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .Inner-Body {
+    padding: 0px 1rem 5rem 1rem;
+  }
+}
+
+.filters::after {
+  position: absolute;
+  right: 0.625rem;
+  top: 13px;
+}
+
+.Notification {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 2px;
+}
+
+.Notification .form-control {
+  width: 50%;
+}
+
+.Notification-Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.Notification-Button .Schedule {
+  font-size: 0.75rem;
+  border-color: #58b0dc;
+  background-color: transparent;
+  color: #58b0dc;
+  padding: 0.3rem 1rem;
+}
+
+.Notification-Button .Schedule:hover {
+  background-color: transparent;
+  color: #58b0dc;
+  border-color: #58b0dc;
+}
+
+.Notification-Button .Schedule:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
+
+.Notification-Button .Cancel {
+  background-color: #dfe2e7;
+  font-size: 0.75rem;
+  color: #000;
+  border: none;
+  margin-right: 0.4rem;
+  padding: 0.3rem 2rem;
+}
+
+.Notification-Button .Cancel :hover {
+  background-color: #dfe2e7;
+  color: #000;
+}
+
+.Notification-Button .Cancel:hover {
+  background-color: #dfe2e7;
+  font-size: 0.75rem;
+  color: #000;
+  border: none;
+  margin-right: 0.4rem;
+  padding: 0.3rem 2rem;
+}
+
+.Notification-Button .Cancel:hover :hover {
+  background-color: #dfe2e7;
+  color: #000;
+}
+
+.Notification-Button .Send {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 2rem;
+}
+
+.Notification-Button .Send :hover {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.Notification-Button .Send:hover {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 2rem;
+}
+
+.Notification-Button .Send:hover :hover {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+#Hours-Modal .modal-content {
+  background-color: #ebf1f5;
+}
+
+#Hours-Modal .modal-body {
+  padding: 2rem;
+}
+
+#Hours-Modal .modal-footer {
+  border-top: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#Hours-Modal .modal-footer .Cancel {
+  background-color: #dfe2e7;
+  font-size: 0.75rem;
+  color: #000;
+  border: none;
+  margin-right: 0.4rem;
+  padding: 0.3rem 2rem;
+}
+
+#Hours-Modal .modal-footer .Cancel :hover {
+  background-color: #dfe2e7;
+  color: #000;
+}
+
+#Hours-Modal .modal-footer .Send {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 2rem;
+}
+
+#Hours-Modal .modal-footer .Send :hover {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+#Hours-Modal .form-check-input {
+  margin-top: 0.1rem;
+  width: 0.7rem;
+}
+
+#Hours-Modal .form-check-label {
+  font-size: 0.625rem;
+}
+
+.MuiGrid-container .MuiInputBase-root {
+  font-size: 0.7rem;
+}
+
+#time {
+  font-size: 0.7rem;
+}
+
+.filters::after {
+  position: absolute;
+  right: 0.625rem;
+  top: 13px;
+}
+
+.Setting {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.Setting .form-control {
+  width: 50%;
+}
+
+.Password_button .Cancel {
+  background-color: #dfe2e7;
+  font-size: 0.75rem;
+  color: #000;
+  border: none;
+  margin-right: 0.4rem;
+  padding: 0.3rem 2rem;
+}
+
+.Password_button .Cancel :hover {
+  background-color: #dfe2e7;
+  color: #000;
+}
+
+.Password_button .Cancel:hover {
+  background-color: #dfe2e7;
+  color: #000;
+}
+
+.Password_button .Send {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 2rem;
+}
+
+.Password_button .Send :hover {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.Password_button .Send:hover {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 767px) {
+  .Password_button {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.filters::after {
+  position: absolute;
+  right: 0.625rem;
+  top: 13px;
+}
+
+.edit-button {
+  background-color: #0a8dcd;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  margin: 0px 10px;
+  border-radius: 2px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.edit-button svg {
+  margin-right: 2px;
+}
+
+.Delete-button {
+  background-color: #db3a3b;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  margin: 0px 10px;
+  border-radius: 2px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.Delete-button svg {
+  margin-right: 2px;
+}
+
+.Add-button {
+  background-color: #21a16c;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  margin: 0px 10px;
+  border-radius: 2px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.Add-button svg {
+  margin-right: 2px;
+}
+
+.ProductDetailButton:hover {
+  text-decoration: none;
+}
+
+.modal-para {
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+  margin-left: 0.8rem;
+}
+
+#Delete-Modal .Cancel {
+  background-color: #dfe2e7;
+  color: #000;
+  border: none;
+  margin-right: 0.4rem;
+  height: 24px;
+  margin: 10px 6px;
+  border-radius: 2px;
+  padding: 0 23px;
+  font-size: 0.625rem;
+}
+
+#Delete-Modal .Delete {
+  background-color: #db3a3b;
+  color: #fff;
+  border: none;
+  margin-right: 0.4rem;
+  height: 24px;
+  margin: 10px 6px;
+  border-radius: 2px;
+  padding: 0 23px;
+  font-size: 0.625rem;
+}
+
+.Search_input_ListItem {
+  position: relative;
+  background-color: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 10px #ccc;
+          box-shadow: 0 0 10px #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.Search_input_ListItem .search_icon {
+  position: absolute;
+  top: 9px;
+  left: 7px;
+}
+
+.Search_input_ListItem #search-bar {
+  background-color: transparent;
+}
+
+.Search_input_ListItem #search-bar:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Search_input_ListItem .list_icon {
+  position: absolute;
+  right: 2px;
+}
+
+.dropdown .btn-outline-secondary {
+  border-color: #0a8dcd;
+}
+
+.dropdown .btn-outline-secondary:hover {
+  background-color: transparent;
+  border-color: #0a8dcd;
+  color: #000;
+}
+
+.dropdown-menu .form-check-label {
+  font-size: 0.625rem;
+}
+
+.dropdown-menu .form-check-input {
+  margin-top: 1px;
+  width: 0.6rem;
+}
+
+.tableImg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.filters::after {
+  position: absolute;
+  right: 0.625rem;
+  top: 13px;
+}
+
+.GoBack {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.Back-arrow {
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 8px;
+  padding: 3px;
+}
+
+.Buttons .Cancel {
+  background-color: #dfe2e7;
+  font-size: 0.75rem;
+  color: #000;
+  border: none;
+  margin-right: 0.4rem;
+  padding: 0.3rem 2rem;
+}
+
+.Buttons .Cancel :hover {
+  background-color: #dfe2e7;
+  color: #000;
+}
+
+.Buttons .Cancel:hover {
+  background-color: #dfe2e7;
+  font-size: 0.75rem;
+  color: #000;
+  border: none;
+  margin-right: 0.4rem;
+  padding: 0.3rem 2rem;
+}
+
+.Buttons .Cancel:hover :hover {
+  background-color: #dfe2e7;
+  color: #000;
+}
+
+.Buttons .Send {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 2rem;
+}
+
+.Buttons .Send :hover {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.Buttons .Send:hover {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 2rem;
+}
+
+.Buttons .Send:hover :hover {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.Title {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 2.5rem;
+  margin-bottom: 0.625rem;
+  min-height: 300px;
+}
+
+.register_profile_image {
+  width: 300px;
+  height: 150px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='2' stroke-dasharray='9' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+  cursor: pointer;
+}
+
+.register_profile_image .file_input {
+  height: 150px;
+  width: 300px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.Image_type {
+  position: absolute;
+  top: 3.5rem;
+  left: 2rem;
+}
+
+.Drop_Box {
+  font-size: 0.625rem;
+}
+
+.label_File {
+  font-size: 0.75rem;
+  position: absolute;
+  left: 13px;
+  top: 53px;
+}
+
+#formCheck-api-regular {
+  opacity: 0;
+  height: 9rem;
+  cursor: pointer;
+}
+
+.form-file {
+  border: 1px dashed #ccc;
+  height: 9rem;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .label_File {
+    font-size: 0.625rem;
+    position: absolute;
+    left: 7px;
+    top: 53px;
+  }
+}
+
+.filters::after {
+  position: absolute;
+  right: 0.625rem;
+  top: 13px;
+}
+
+.Guideline {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 2px;
+  padding-left: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.Guideline-list {
+  font-size: 0.75rem;
+  list-style: none;
+}
+
+.Guideline-list .Guideline-list-item::before {
+  content: "\2022";
+  color: #9b9b9b;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -31px;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+}
+
+.filters::after {
+  position: absolute;
+  right: 0.625rem;
+  top: 13px;
+}
+
+.Strategy {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.dropdown .Strategy {
+  background-color: #fff;
+  font-size: 0.625rem;
+  padding: 7px 70px 6px 7px;
+  border: 1px solid #8894a5;
+  margin-bottom: 0.5rem;
+  text-align: start;
+}
+
+.dropdown .Strategy::after {
+  position: absolute;
+  right: 11px;
+  top: 13px;
+}
+
+.Strategy-Form .margin-bottom {
+  margin-bottom: 4rem;
+}
+
+.Strategy-Form .Strategy_number {
+  font-size: 12px;
+  border: 1px solid #8894a5;
+}
+
+.Strategy-Form .Strategy_number .form-label {
+  font-size: 12px;
+}
+
+.Add_button {
+  text-align: center;
+  padding: 5px 0;
+  border: 1px dashed #098dcd;
+  color: #098dcd;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.Shuffling .form-check-input {
+  margin-top: 7px;
+  width: 9px;
+}
+
+.Shuffling .form-check-label {
+  font-size: 0.625rem;
+}
+
+.Custom-link {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  color: #098dcd;
+}
+
+.Hours-Input .Strategy_number {
+  font-size: 0.6rem;
+  width: 30%;
+  margin-top: 0.5rem;
+  padding: 0 0.3rem;
+}
+
+.Labels-font {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.Hours-Input .form-control:focus {
+  background-color: transparent;
+  border-color: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Strategy-Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.Strategy-Button .Cancel {
+  background-color: #dfe2e7;
+  font-size: 0.75rem;
+  color: #000;
+  border: none;
+  margin-right: 0.4rem;
+  padding: 0.3rem 2rem;
+}
+
+.Strategy-Button .Cancel :hover {
+  background-color: #dfe2e7;
+  color: #000;
+}
+
+.Strategy-Button .Cancel:hover {
+  background-color: #dfe2e7;
+  font-size: 0.75rem;
+  color: #000;
+  border: none;
+  margin-right: 0.4rem;
+  padding: 0.3rem 2rem;
+}
+
+.Strategy-Button .Cancel:hover :hover {
+  background-color: #dfe2e7;
+  color: #000;
+}
+
+.Strategy-Button .Send {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 2rem;
+}
+
+.Strategy-Button .Send :hover {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.Strategy-Button .Send:hover {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 2rem;
+}
+
+.Strategy-Button .Send:hover :hover {
+  background-color: #0a8dcd;
+  color: #fff;
+  font-size: 0.75rem;
+}
+/*# sourceMappingURL=Style.css.map */

@@ -1,0 +1,99 @@
+@import "../Modules/Variable";
+@mixin Cancel_button {
+  background-color: $Cancel;
+  font-size: 0.75rem;
+  color: $black_color;
+  border: none;
+  margin-right: 0.4rem;
+  padding: 0.3rem 2rem;
+  :hover {
+    background-color: $Cancel;
+    color: $black_color;
+  }
+}
+@mixin Send_button {
+  background-color: $primary-color;
+  color: $White-color;
+  font-size: 0.75rem;
+  padding: 0.3rem 2rem;
+  :hover {
+    background-color: $primary-color;
+    color: $White-color;
+    font-size: 0.75rem;
+  }
+}
+@mixin Search_inputs {
+  position: relative;
+  @include White-Background;
+  border-radius: 3px;
+  box-shadow: $base-box-shadow;
+  margin-bottom: 0.5rem;
+  .search_icon {
+    position: absolute;
+    top: 9px;
+    left: 7px;
+  }
+  #search-bar {
+    background-color: transparent;
+  }
+  #search-bar:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  .list_icon {
+    position: absolute;
+    right: 2px;
+  }
+}
+@mixin function-button {
+  padding: $Buttons_Padding;
+  color: $White-color;
+  margin: 0px 10px;
+  border-radius: $border_Radius;
+  font-size: $Small_font;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  svg {
+    margin-right: 2px;
+  }
+}
+@mixin Sidebar {
+  transition: 0.3s;
+  background-color: #000;
+  float: left;
+  padding-top: 5rem;
+  position: fixed;
+  min-height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+@mixin White-Background {
+  background-color: $White-color;
+}
+@mixin Cancel-Delete {
+  border: none;
+  margin-right: 0.4rem;
+  height: 24px;
+  margin: 10px 6px;
+  border-radius: $border_Radius;
+  padding: 0 23px;
+  font-size: 0.625rem;
+}
+@mixin Dropdown {
+  @include White-Background;
+  font-size: $Small_font;
+  padding: 7px 70px 6px 7px;
+  border: 1px solid $Filter-border-color;
+  margin-bottom: 0.5rem;
+}
+.filters::after {
+  position: absolute;
+  right: $Small_font;
+  top: 13px;
+}

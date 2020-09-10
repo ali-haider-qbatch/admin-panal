@@ -1,0 +1,89 @@
+@import "../Modules/Variable";
+@import "../Modules/mixins";
+.Strategy {
+  @include White-Background;
+  padding: 2rem;
+}
+.dropdown {
+  .Strategy {
+    @include Dropdown;
+    text-align: start;
+  }
+  .Strategy::after {
+    position: absolute;
+    right: 11px;
+    top: 13px;
+  }
+}
+.Strategy-Form {
+  .margin-bottom {
+    margin-bottom: 4rem;
+  }
+}
+.Strategy-Form .Strategy_number {
+  font-size: 12px;
+  border: 1px solid $Input-color;
+  .form-label {
+    font-size: 12px;
+  }
+}
+.Add_button {
+  text-align: center;
+  padding: 5px 0;
+  border: 1px dashed $Dashboard-color;
+  color: $Dashboard-color;
+  font-size: $Medium-font;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.Shuffling {
+  .form-check-input {
+    margin-top: 7px;
+    width: 9px;
+  }
+  .form-check-label {
+    font-size: 0.625rem;
+  }
+}
+.Custom-link {
+  font-size: $Medium-font;
+  text-decoration: underline;
+  color: $Dashboard-color;
+}
+.Hours-Input {
+  .Strategy_number {
+    font-size: 0.6rem;
+    width: 30%;
+    margin-top: 0.5rem;
+    padding: 0 0.3rem;
+  }
+}
+.Labels-font {
+  font-size: $Medium-font;
+  font-weight: 600;
+}
+.Hours-Input .form-control:focus {
+  background-color: transparent;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+.Strategy-Button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  .Cancel {
+    @include Cancel_button;
+  }
+  .Cancel:hover {
+    @include Cancel_button;
+  }
+  .Send {
+    @include Send_button;
+  }
+  .Send:hover {
+    @include Send_button;
+  }
+}

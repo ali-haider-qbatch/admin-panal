@@ -1,0 +1,19 @@
+#body {
+  background-color: $body_Background;
+  min-height: 100%;
+  font-family: "Work Sans", sans-serif;
+}
+form .form-control:focus {
+  background-color: transparent;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+.Login-Screen-Header {
+  background-color: #fff;
+  width: 100%;
+  min-height: 50px;
+  box-shadow: 0 0 10px #ccc;
+  position: fixed;
+  z-index: 1;
+}

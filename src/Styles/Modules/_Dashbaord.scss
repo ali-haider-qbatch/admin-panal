@@ -1,0 +1,109 @@
+@import "../Modules/Variable";
+@import "../Modules/mixins";
+.MainBoard {
+  @include White-Background;
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+.Inner-Detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .inner-svg {
+    width: 1.87rem;
+    height: 1.87rem;
+    background-color: $Svg-color;
+    border-radius: 50%;
+    padding-left: 0.43rem;
+    padding-top: 0.06rem;
+    color: $Svg_Color;
+    cursor: pointer;
+  }
+  .border-right {
+    border-right: 0.06rem solid $border_Color;
+  }
+  .Caption {
+    color: $caption_Color;
+  }
+}
+.Search_input {
+  @include Search_inputs;
+}
+.Dashboard-Table {
+  .Inner_Dashboard_table {
+    @include White-Background;
+    display: revert;
+    font-size: 0.625rem;
+    text-align: left;
+    .Table-header {
+      background: $Table-header;
+    }
+  }
+}
+.dropdown {
+  .filters {
+    @include Dropdown;
+  }
+  .Button-icon {
+    vertical-align: text-bottom;
+  }
+  .filters:hover {
+    background-color: #fff;
+    border: 1px solid #8894a5;
+  }
+}
+.OrderId {
+  color: $smallFont_Color;
+  font-size: $Small_font;
+}
+.Amount_Detail {
+  display: flex;
+  flex-direction: row;
+}
+.Inner-Body {
+  padding: 0px 5rem 5rem 5rem;
+}
+.Amount {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.Inner_Summary {
+  background-color: $PopUp-Color;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+.Print_Button {
+  background-color: $print-button;
+  font-size: 0.625rem;
+  color: $White-color;
+  border: none;
+  height: 24px;
+  margin: 10px 6px;
+  border-radius: 0.31rem;
+  padding: 4px 24px;
+}
+.item {
+  margin-right: 2rem;
+}
+@media (max-width: 991px) {
+  .Dashboard-Table {
+    .Inner_Dashboard_table {
+      display: block;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .dropdown {
+    .filters {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .Inner-Body {
+    padding: 0px 1rem 5rem 1rem;
+  }
+}

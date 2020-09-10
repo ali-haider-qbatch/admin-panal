@@ -1,0 +1,26 @@
+@import "../Modules/Variable";
+.Login-font {
+  font-weight: 900;
+  font-size: $Medium-font;
+  padding: 0 2rem;
+}
+.Forget-Password {
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  color: $Forget_password;
+}
+.Forget-Password:hover {
+  text-decoration: none;
+  color: $Forget_password;
+}
+.form-group {
+  label {
+    font-size: 10px;
+  }
+  .form-control {
+    font-size: 12px;
+    border: 1px solid #8894a5;
+  }
+}

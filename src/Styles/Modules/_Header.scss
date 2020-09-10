@@ -1,0 +1,13 @@
+@import "../Modules/Variable";
+.logo {
+  max-height: 3.1rem;
+  max-width: 3.1rem;
+  margin-left: 5rem;
+}
+
+.Box-Shadow {
+  box-shadow: $base-box-shadow;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}

@@ -1,0 +1,28 @@
+@import "../Modules/Variable";
+@import "../Modules/mixins";
+.SideBar {
+  width: 12.5rem;
+  @include Sidebar;
+}
+#Dashboard {
+  width: calc(100% - 12.5rem);
+  float: right;
+  padding-top: 5rem;
+}
+.SideMenu {
+  width: 0;
+  @include Sidebar;
+}
+@media (max-width: 991px) {
+  #Dashboard {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .SideMenu {
+    width: 12.5rem;
+  }
+  .open {
+    width: 12.5rem;
+  }
+}

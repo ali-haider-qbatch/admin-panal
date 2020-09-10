@@ -1,0 +1,31 @@
+@import "../Modules/mixins";
+@import "../Modules/Variable";
+.Setting {
+  @include White-Background;
+  padding: 2rem;
+  .form-control {
+    width: 50%;
+  }
+}
+.Password_button {
+  .Cancel {
+    @include Cancel_button;
+  }
+  .Cancel:hover {
+    background-color: $Cancel;
+    color: $black_color;
+  }
+  .Send {
+    @include Send_button;
+  }
+  .Send:hover {
+    background-color: $primary-color;
+    color: $White-color;
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 767px) {
+  .Password_button {
+    margin-bottom: 0.5rem;
+  }
+}

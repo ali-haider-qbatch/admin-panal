@@ -1,0 +1,84 @@
+@import "../Modules/mixins";
+@import "../Modules/Variable";
+.GoBack {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.Back-arrow {
+  @include White-Background;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 8px;
+  padding: 3px;
+}
+.Buttons {
+  .Cancel {
+    @include Cancel_button;
+  }
+  .Cancel:hover {
+    @include Cancel_button;
+  }
+  .Send {
+    @include Send_button;
+  }
+  .Send:hover {
+    @include Send_button;
+  }
+}
+.Title {
+  @include White-Background;
+  border-radius: $border_Radius;
+  padding: 2.5rem;
+  margin-bottom: 0.625rem;
+  min-height: 300px;
+}
+.register_profile_image {
+  width: 300px;
+  height: 150px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='2' stroke-dasharray='9' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+  cursor: pointer;
+
+  .file_input {
+    height: 150px;
+    width: 300px;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+.Image_type {
+  position: absolute;
+  top: 3.5rem;
+  left: 2rem;
+}
+.Drop_Box {
+  font-size: $Small_font;
+}
+
+.label_File {
+  font-size: 0.75rem;
+  position: absolute;
+  left: 13px;
+  top: 53px;
+}
+#formCheck-api-regular {
+  opacity: 0;
+  height: 9rem;
+  cursor: pointer;
+}
+.form-file {
+  border: 1px dashed $border_Color;
+  height: 9rem;
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .label_File {
+    font-size: $Small_font;
+    position: absolute;
+    left: 7px;
+    top: 53px;
+  }
+}

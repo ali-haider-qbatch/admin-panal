@@ -1,0 +1,9 @@
+@import "../Modules/Variable";
+#DashboardButton {
+  background-color: $primary-color;
+  width: 100%;
+  color: $White-color;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: $Medium-font;
+}

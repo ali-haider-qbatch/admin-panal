@@ -1,0 +1,11 @@
+.instructions {
+  font-size: 0.8125rem;
+  text-align: center;
+  width: 65%;
+  margin: 1.3rem auto;
+}
+@media (max-width: 767px) {
+  .instructions {
+    width: 100%;
+  }
+}
