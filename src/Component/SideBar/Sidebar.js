@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
-import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
 import { ImHome } from "react-icons/im";
 import { VscTasklist } from "react-icons/vsc";

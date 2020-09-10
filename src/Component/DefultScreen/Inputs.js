@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, Button } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 export class Inputs extends Component {
   constructor(props) {
     super(props);

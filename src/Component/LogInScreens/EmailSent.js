@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Box from "@material-ui/core/Box";
-import Headers from "../DefultScreen/Header";
 import Heading from "../DefultScreen/Heading";
 import Logo from "../DefultScreen/logo";
 import EmailSvg from "../../Assets/Email Sent/Emailsent.svg";

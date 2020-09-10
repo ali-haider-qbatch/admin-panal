@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import Box from "@material-ui/core/Box";
-import Headers from "../DefultScreen/Header";
 import Heading from "../DefultScreen/Heading";
 import Logo from "../DefultScreen/logo";
 import Inputs from "../DefultScreen/Inputs";
 import Buttons from "../DefultScreen/Buttons";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 export class ForgetPassword extends Component {
   render() {
     return (

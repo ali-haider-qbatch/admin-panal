@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Box from "@material-ui/core/Box";
-import Headers from "../DefultScreen/Header";
 import Heading from "../DefultScreen/Heading";
 import Logo from "../DefultScreen/logo";
 import Inputs from "../DefultScreen/Inputs";
@@ -11,7 +10,6 @@ export class SignIn extends Component {
   render() {
     return (
       <React.Fragment>
-        {/* <Headers /> */}
         <Box className="Login-Screen-Header" />
         <Box>
           <Row className="justify-content-md-center justify-content-lg-center  justify-content-sm-center m-0">

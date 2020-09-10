@@ -11,7 +11,6 @@ import {
   Dropdown,
   Table,
 } from "react-bootstrap";
-import { TiTimes } from "react-icons/ti";
 import TableImg from "../../Assets/table/mobile.png";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FiList } from "react-icons/fi";
@@ -19,7 +18,7 @@ import { AiOutlineEdit } from "react-icons/ai";
 import { FaRegTimesCircle } from "react-icons/fa";
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { AiFillWarning } from "react-icons/ai";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 function ListedItem() {
   const [smShow, setSmShow] = useState(false);
   const onHide = () => setSmShow(false);
