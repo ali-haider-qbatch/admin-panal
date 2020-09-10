@@ -3,7 +3,6 @@ import Box from "@material-ui/core/Box";
 import { Image } from "react-bootstrap";
 import {
   Container,
-  Form,
   Button,
   Modal,
   Row,

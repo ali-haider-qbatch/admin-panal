@@ -18,7 +18,6 @@ import { FiList } from "react-icons/fi";
 import TableImg from "../../Assets/table/mobile.png";
 import { FaRegTimesCircle } from "react-icons/fa";
 import "date-fns";
-import DateFnsUtils from "@date-io/date-fns";
 import { ImCheckmark2 } from "react-icons/im";
 import { BiCalendar } from "react-icons/bi";
 import { VscTasklist } from "react-icons/vsc";
@@ -26,20 +25,23 @@ import { FaRegEnvelope } from "react-icons/fa";
 import { TiUser } from "react-icons/ti";
 import Background from "../../Assets/Modal/PickListTop.svg";
 import { AiOutlinePrinter } from "react-icons/ai";
-import {
-  MuiPickersUtilsProvider,
-  KeyboardDatePicker,
-} from "@material-ui/pickers";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+const useStyles = makeStyles((theme) => ({
+  container: {
+    display: "flex",
+    flexWrap: "wrap",
+  },
+  textField: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+    width: 140,
+  },
+}));
 function Dashboard() {
-  const [selectedDate, setSelectedDate] = React.useState(
-    new Date("2014-08-18T21:11:54")
-  );
-
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
   const [smShow, setSmShow] = useState(false);
   const onHide = () => setSmShow(false);
+  const classes = useStyles();
   return (
     <React.Fragment>
       <Box id="Dashboard">
@@ -52,20 +54,17 @@ function Dashboard() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                    <KeyboardDatePicker
-                      disableToolbar
-                      variant="inline"
-                      format="MM/dd/yyyy"
-                      margin="normal"
-                      id="date-picker-inline"
-                      value={selectedDate}
-                      onChange={handleDateChange}
-                      KeyboardButtonProps={{
-                        "aria-label": "change date",
+                  <form className={classes.container} noValidate>
+                    <TextField
+                      id="date"
+                      type="date"
+                      defaultValue="2017-05-24"
+                      className={classes.textField}
+                      InputLabelProps={{
+                        shrink: true,
                       }}
                     />
-                  </MuiPickersUtilsProvider>
+                  </form>
                 </Dropdown.Menu>
               </Dropdown>
             </Col>

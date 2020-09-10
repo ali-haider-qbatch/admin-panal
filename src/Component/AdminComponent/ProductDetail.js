@@ -5,6 +5,8 @@ import { IoIosArrowBack } from "react-icons/io";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import UploadPic from "../../Assets/table/mobile.png";
 import { Image } from "react-bootstrap";
+import Heading from "../DefultScreen/Heading";
+import Inputs from "../DefultScreen/Inputs";
 function ProductDetail() {
   let history = useHistory();
   return (
@@ -20,7 +22,7 @@ function ProductDetail() {
           <Row>
             <Col md={6}>
               <Box mt={2}>
-                <h3 className="font-weight-bold">Add Product</h3>
+                <Heading Heading="Add Product" align="left" />
               </Box>
             </Col>
             <Col md={6}>
@@ -43,11 +45,11 @@ function ProductDetail() {
               <Box className="Title">
                 {" "}
                 <Form>
-                  <Form.Group controlId="formBasicEmail">
-                    <Form.Label className="font-weight-bold">Title</Form.Label>
-                    <Form.Control type="email" placeholder="Title of Product" />
-                  </Form.Group>
-
+                  <Inputs
+                    type="text"
+                    placeholder="Title of Product"
+                    FormLabel="Title"
+                  />
                   <Form.Group controlId="exampleForm.ControlTextarea1">
                     <Form.Label className="font-weight-bold">
                       Description
@@ -84,39 +86,22 @@ function ProductDetail() {
             </Col>
             <Col md={6}>
               <Box className="Title">
-                <Form>
-                  <Form.Group controlId="formBasicEmail">
-                    <Form.Label className="font-weight-bold">Price</Form.Label>
-                    <Form.Control type="number" placeholder="$" />
-                  </Form.Group>
-                  <Form.Group controlId="formBasicEmail">
-                    <Form.Label className="font-weight-bold">
-                      Discount Percentage
-                    </Form.Label>
-                    <Form.Control type="number" placeholder="%" />
-                  </Form.Group>
-                </Form>
+                <Inputs type="number" placeholder="$" FormLabel="Price" />
+                <Inputs
+                  type="number"
+                  placeholder="%"
+                  FormLabel="Discount Percentage"
+                />
               </Box>
             </Col>
             <Col md={6}>
               <Box className="Title">
-                <Form>
-                  <Form.Group controlId="formBasicEmail">
-                    <Form.Label className="font-weight-bold">
-                      Quantity
-                    </Form.Label>
-                    <Form.Control type="number" placeholder="$" />
-                  </Form.Group>
-                  <Form.Group controlId="formBasicEmail">
-                    <Form.Label className="font-weight-bold">
-                      Bin Location
-                    </Form.Label>
-                    <Form.Control
-                      type="number"
-                      placeholder="Select bin location"
-                    />
-                  </Form.Group>
-                </Form>
+                <Inputs type="number" placeholder="$" FormLabel="Quantity" />
+                <Inputs
+                  type="text"
+                  placeholder="Select bin location"
+                  FormLabel="Bin Location"
+                />
               </Box>
             </Col>
           </Row>

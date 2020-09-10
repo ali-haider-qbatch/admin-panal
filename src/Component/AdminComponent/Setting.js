@@ -3,12 +3,13 @@ import { Container, Button, Row, Col } from "react-bootstrap";
 import Box from "@material-ui/core/Box";
 import Guideline from "../DefultScreen/Guideline";
 import Inputs from "../DefultScreen/Inputs";
+import Heading from "../DefultScreen/Heading";
 function Setting() {
   return (
     <React.Fragment>
       <Box id="Dashboard">
         <Container>
-          <h3 className="font-weight-bold">Update Password</h3>
+          <Heading Heading="Update Password" align="left" />
           <Row>
             <Col md={6} lg={8}>
               <Box className="Setting">

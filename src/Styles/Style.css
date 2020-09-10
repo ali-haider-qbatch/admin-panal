@@ -828,7 +828,7 @@ form .form-control:focus {
   border-radius: 2px;
   padding: 2.5rem;
   margin-bottom: 0.625rem;
-  min-height: 300px;
+  min-height: 315px;
 }
 
 .register_profile_image {

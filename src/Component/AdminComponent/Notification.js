@@ -7,6 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import DateFnsUtils from "@date-io/date-fns";
 import Guideline from "../DefultScreen/Guideline";
 import Inputs from "../DefultScreen/Inputs";
+import Heading from "../DefultScreen/Heading";
 import {
   MuiPickersUtilsProvider,
   KeyboardDatePicker,
@@ -18,7 +19,7 @@ function Notification() {
     <React.Fragment>
       <Box id="Dashboard">
         <Container>
-          <h3 className="font-weight-bold">Add Notification</h3>
+          <Heading Heading="Add Notification" align="left" />
           <Row>
             <Col md={8}>
               <Box className="Notification">

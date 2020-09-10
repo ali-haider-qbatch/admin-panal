@@ -5,7 +5,7 @@ import Logo from "../DefultScreen/logo";
 import EmailSvg from "../../Assets/Email Sent/Emailsent.svg";
 import Buttons from "../DefultScreen/Buttons";
 import { Image } from "react-bootstrap";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 export class EmailSent extends Component {
   render() {
     return (

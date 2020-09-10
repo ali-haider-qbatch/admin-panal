@@ -6,6 +6,7 @@ export class Heading extends Component {
 
     this.state = {
       Heading: props.Heading,
+      align: props.align,
     };
   }
 
@@ -13,7 +14,7 @@ export class Heading extends Component {
     return (
       <React.Fragment>
         <Box mt={1} mb={4}>
-          <h3 variant="h4" align="center">
+          <h3 variant="h4" align={this.props.align}>
             {this.state.Heading}
           </h3>
         </Box>

@@ -1,23 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Box from "@material-ui/core/Box";
-import {
-  Container,
-  Row,
-  Col,
-  Table,
-  Image,
-  Dropdown,
-  Modal,
-  Button,
-} from "react-bootstrap";
-import { GiPaperBoat } from "react-icons/gi";
-import { HiOutlineCurrencyDollar } from "react-icons/hi";
-import { TiTimes } from "react-icons/ti";
+import { Container, Row, Col, Table, Dropdown } from "react-bootstrap";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FiList } from "react-icons/fi";
-import Inputs from "../DefultScreen/Inputs";
-import TableImg from "../../Assets/table/mobile.png";
-import { FaRegTimesCircle } from "react-icons/fa";
 import "date-fns";
 import DateFnsUtils from "@date-io/date-fns";
 import { BiCalendar } from "react-icons/bi";

@@ -4,8 +4,8 @@ import Heading from "../DefultScreen/Heading";
 import Logo from "../DefultScreen/logo";
 import Inputs from "../DefultScreen/Inputs";
 import Buttons from "../DefultScreen/Buttons";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Row, Col } from "react-bootstrap";
 export class SignIn extends Component {
   render() {
     return (
@@ -15,7 +15,7 @@ export class SignIn extends Component {
           <Row className="justify-content-md-center justify-content-lg-center  justify-content-sm-center m-0">
             <Col lg={4} md={7} sm={12}>
               <Logo />
-              <Heading Heading="Sign in to BWD" />
+              <Heading Heading="Sign in to BWD" align="center" />
               <Box
                 boxShadow={2}
                 p={5}

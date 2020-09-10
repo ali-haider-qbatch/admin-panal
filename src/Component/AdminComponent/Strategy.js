@@ -5,12 +5,13 @@ import Guideline from "../DefultScreen/Guideline";
 import Inputs from "../DefultScreen/Inputs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Heading from "../DefultScreen/Heading";
 function Strategy() {
   return (
     <React.Fragment>
       <Box id="Dashboard">
         <Container>
-          <h3 className="font-weight-bold">Set Strategy</h3>
+          <Heading Heading="Set Strategy" align="left" />
           <Row>
             <Col md={8}>
               <Box className="Strategy">
