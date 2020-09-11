@@ -177,11 +177,11 @@ form .form-control:focus {
   }
 }
 
-.list-unstyled .dashboard-list .sidebar_Icon {
+.list-unstyled .sidebar_Icon {
   margin-right: 0.4rem;
 }
 
-.list-unstyled .dashboard-list .Dashboard-link {
+.list-unstyled .Dashboard-link {
   color: #fff;
   font-size: 14px;
   display: inline-block;
@@ -190,11 +190,11 @@ form .form-control:focus {
   padding: 1rem 2rem;
 }
 
-.list-unstyled .dashboard-list .active {
+.list-unstyled .active {
   border-left: 3px solid #098dcd;
 }
 
-.list-unstyled .dashboard-list .active .sidebar_Icon {
+.list-unstyled .active .sidebar_Icon {
   color: #0a8dcd;
 }
 

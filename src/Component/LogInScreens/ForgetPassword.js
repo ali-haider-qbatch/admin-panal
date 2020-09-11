@@ -14,7 +14,7 @@ export class ForgetPassword extends Component {
           <Row className="justify-content-md-center justify-content-lg-center  justify-content-sm-center m-0">
             <Col lg={4} md={7} sm={12}>
               <Logo />
-              <Heading Heading="Resetting Password " />
+              <Heading Heading="Resetting Password" align="center" />
               <Box
                 boxShadow={2}
                 p={5}

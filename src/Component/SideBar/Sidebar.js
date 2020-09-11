@@ -16,7 +16,7 @@ function Sidebar(props) {
     <React.Fragment>
       <Box className={open ? "SideBar" : "SideMenu"}>
         <ul className="list-unstyled">
-          <li className="dashboard-list">
+          <li>
             <NavLink
               activeClassName="active"
               to="/dashboard"
@@ -26,7 +26,7 @@ function Sidebar(props) {
               Dashboard
             </NavLink>
           </li>
-          <li className="dashboard-list">
+          <li>
             <NavLink
               activeClassName="active"
               to="/listedItem"
@@ -36,7 +36,7 @@ function Sidebar(props) {
               Item listed
             </NavLink>
           </li>
-          <li className="dashboard-list">
+          <li>
             <NavLink
               activeClassName="active"
               to="/Strategy"
@@ -46,7 +46,7 @@ function Sidebar(props) {
               Strategy
             </NavLink>
           </li>
-          <li className="dashboard-list">
+          <li>
             <NavLink
               activeClassName="active"
               to="/Orders"
@@ -56,7 +56,7 @@ function Sidebar(props) {
               Orders
             </NavLink>
           </li>
-          <li className="dashboard-list">
+          <li>
             <NavLink
               activeClassName="active"
               to="/Notification"
@@ -66,7 +66,7 @@ function Sidebar(props) {
               Notifications
             </NavLink>
           </li>
-          <li className="dashboard-list">
+          <li>
             <NavLink
               activeClassName="active"
               to="/Setting"
@@ -76,7 +76,7 @@ function Sidebar(props) {
               Setting
             </NavLink>
           </li>
-          <li className="dashboard-list">
+          <li>
             <NavLink exact to="/" className="Dashboard-link">
               <RiLogoutBoxLine className="sidebar_Icon" />
               Log Out
