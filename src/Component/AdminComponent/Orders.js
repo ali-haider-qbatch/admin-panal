@@ -17,7 +17,6 @@ function Dashboard() {
   const [selectedDate, setSelectedDate] = React.useState(
     new Date("2014-08-18T21:11:54")
   );
-
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
@@ -55,7 +54,6 @@ function Dashboard() {
                 <Dropdown.Toggle variant="light" className="filters">
                   <VscTasklist className="Button-icon" /> Filter By Product
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                   <Dropdown.Item href="#/action-2">
@@ -73,7 +71,6 @@ function Dashboard() {
                   <FaRegEnvelope className="Button-icon" /> Filter By Customer
                   Email
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                   <Dropdown.Item href="#/action-2">
@@ -91,7 +88,6 @@ function Dashboard() {
                   <Dropdown.Toggle variant="light" className="filters">
                     <TiUser className="Button-icon" /> Filter By Customer Name
                   </Dropdown.Toggle>
-
                   <Dropdown.Menu>
                     <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                     <Dropdown.Item href="#/action-2">
@@ -121,14 +117,12 @@ function Dashboard() {
                       placeholder="Search"
                       aria-label="Search"
                     />
-
                     <FiList className="list_icon" />
                   </form>
                 </Box>
               </Col>
             </Row>
           </Box>
-
           <Box className="Dashboard-Table">
             <Table className="Inner_Dashboard_table table-md table-responsive">
               <thead className="Table-header">
@@ -174,7 +168,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>5</td>
                   <td>John Doe</td>
@@ -187,7 +180,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>8</td>
                   <td>John Doe</td>
@@ -213,7 +205,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>5</td>
                   <td>John Doe</td>
@@ -226,7 +217,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>6</td>
                   <td>John Doe</td>
@@ -239,7 +229,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>6</td>
                   <td>John Doe</td>
@@ -252,7 +241,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>5</td>
                   <td>John Doe</td>
@@ -265,7 +253,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>5</td>
                   <td>John Doe</td>
@@ -278,7 +265,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>5</td>
                   <td>John Doe</td>
@@ -291,7 +277,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>5</td>
                   <td>John Doe</td>
@@ -304,7 +289,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>5</td>
                   <td>John Doe</td>
@@ -317,7 +301,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>5</td>
                   <td>John Doe</td>
@@ -330,7 +313,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>5</td>
                   <td>John Doe</td>
@@ -343,7 +325,6 @@ function Dashboard() {
                   <td>
                     <input type="checkbox" />
                   </td>
-
                   <td>BS2563BS</td>
                   <td>5</td>
                   <td>John Doe</td>
@@ -360,5 +341,4 @@ function Dashboard() {
     </React.Fragment>
   );
 }
-
 export default Dashboard;

@@ -14,7 +14,6 @@ import {
 } from "@material-ui/pickers";
 function Notification() {
   const [modalShow, setModalShow] = React.useState(false);
-
   return (
     <React.Fragment>
       <Box id="Dashboard">
@@ -29,7 +28,6 @@ function Notification() {
                     placeholder="Notification Title"
                     FormLabel="Title"
                   />
-
                   <Form.Group>
                     <Form.Label className="font-weight-bold">
                       Description
@@ -56,7 +54,6 @@ function Notification() {
                     onHide={() => setModalShow(false)}
                   />
                 </Box>
-
                 <Box>
                   <Button className="Cancel" mr={2}>
                     Cancel

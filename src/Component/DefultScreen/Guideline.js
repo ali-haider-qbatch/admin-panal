@@ -29,5 +29,4 @@ function Guideline() {
     </React.Fragment>
   );
 }
-
 export default Guideline;

@@ -8,10 +8,8 @@ import { HiOutlineBell } from "react-icons/hi";
 import { RiLogoutBoxLine } from "react-icons/ri";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsViewList } from "react-icons/bs";
-
 function Sidebar(props) {
   const open = props.sideBar;
-
   return (
     <React.Fragment>
       <Box className={open ? "SideBar" : "SideMenu"}>
@@ -87,5 +85,4 @@ function Sidebar(props) {
     </React.Fragment>
   );
 }
-
 export default Sidebar;

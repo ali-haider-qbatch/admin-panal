@@ -4,12 +4,10 @@ import { Button } from "react-bootstrap";
 export class Buttons extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       Name: props.Name,
     };
   }
-
   render() {
     return (
       <React.Fragment>
@@ -20,5 +18,4 @@ export class Buttons extends Component {
     );
   }
 }
-
 export default Buttons;

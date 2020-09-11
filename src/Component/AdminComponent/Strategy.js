@@ -36,7 +36,6 @@ function Strategy() {
                           >
                             100
                           </Dropdown.Toggle>
-
                           <Dropdown.Menu>
                             <Dropdown.Item href="#/action-1">
                               Action
@@ -69,7 +68,6 @@ function Strategy() {
                             >
                               100
                             </Dropdown.Toggle>
-
                             <Dropdown.Menu>
                               <Dropdown.Item href="#/action-1">
                                 Action
@@ -98,7 +96,6 @@ function Strategy() {
                             >
                               100
                             </Dropdown.Toggle>
-
                             <Dropdown.Menu>
                               <Dropdown.Item href="#/action-1">
                                 Action
@@ -127,7 +124,6 @@ function Strategy() {
                             >
                               100
                             </Dropdown.Toggle>
-
                             <Dropdown.Menu>
                               <Dropdown.Item href="#/action-1">
                                 Action
@@ -142,7 +138,6 @@ function Strategy() {
                           </Dropdown>
                         </Col>
                       </Row>
-
                       <Box className="Add_button">
                         <AiOutlinePlus />
                         Add Button
@@ -192,5 +187,4 @@ function Strategy() {
     </React.Fragment>
   );
 }
-
 export default Strategy;

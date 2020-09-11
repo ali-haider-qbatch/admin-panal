@@ -52,7 +52,6 @@ function Dashboard() {
                 <Dropdown.Toggle variant="light" className="filters">
                   <BiCalendar className="Button-icon" /> Filter By Date
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <form className={classes.container} noValidate>
                     <TextField
@@ -71,9 +70,9 @@ function Dashboard() {
             <Col md="auto">
               <Dropdown>
                 <Dropdown.Toggle variant="light" className="filters">
-                  <VscTasklist className="Button-icon" /> Filter By Product
+                  <VscTasklist className="Button-icon" />
+                  Filter By Product
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                   <Dropdown.Item href="#/action-2">
@@ -91,7 +90,6 @@ function Dashboard() {
                   <FaRegEnvelope className="Button-icon" /> Filter By Customer
                   Email
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                   <Dropdown.Item href="#/action-2">
@@ -109,7 +107,6 @@ function Dashboard() {
                   <Dropdown.Toggle variant="light" className="filters">
                     <TiUser className="Button-icon" /> Filter By Customer Name
                   </Dropdown.Toggle>
-
                   <Dropdown.Menu>
                     <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                     <Dropdown.Item href="#/action-2">
@@ -146,7 +143,6 @@ function Dashboard() {
                   <small className="Caption">EARNED TODAY</small>
                 </Box>
               </Col>
-
               <Col md={4}>
                 <Box className="Inner-Detail">
                   <span className="inner-svg">
@@ -171,7 +167,6 @@ function Dashboard() {
                       placeholder="Search"
                       aria-label="Search"
                     />
-
                     <FiList className="list_icon" />
                   </form>
                 </Box>
@@ -202,7 +197,11 @@ function Dashboard() {
                         <h4 className="m-0 mt-1">Details of Items Pickup</h4>
                         <small className="OrderId">Order ID #1499C56</small>
                       </Box>
-                      <Box className="Amount_Detail">
+                      <Box
+                        className="Amount_Detail"
+                        display="flex"
+                        flexDirection="row"
+                      >
                         <Box className="Amount">
                           <small className="OrderId">amount to be paid</small>
                           <small>$800</small>
@@ -257,7 +256,6 @@ function Dashboard() {
               </Col>
             </Row>
           </Box>
-
           <Box className="Dashboard-Table">
             <Table className="Inner_Dashboard_table table-md table-responsive">
               <thead className="Table-header">
@@ -504,5 +502,4 @@ function Dashboard() {
     </React.Fragment>
   );
 }
-
 export default Dashboard;

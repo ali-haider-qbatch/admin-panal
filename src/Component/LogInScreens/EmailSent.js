@@ -39,5 +39,4 @@ export class EmailSent extends Component {
     );
   }
 }
-
 export default EmailSent;

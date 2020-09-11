@@ -43,7 +43,6 @@ function ProductDetail() {
           <Row>
             <Col md={6}>
               <Box className="Title">
-                {" "}
                 <Form>
                   <Inputs
                     type="text"
@@ -110,5 +109,4 @@ function ProductDetail() {
     </React.Fragment>
   );
 }
-
 export default ProductDetail;

@@ -30,7 +30,7 @@
   margin-bottom: 0.5rem;
   .search_icon {
     position: absolute;
-    top: 9px;
+    top: 8px;
     left: 7px;
   }
   #search-bar {
@@ -39,6 +39,7 @@
   #search-bar:focus {
     outline: 0;
     box-shadow: none;
+    background-color: transparent;
   }
   .list_icon {
     position: absolute;
@@ -64,7 +65,6 @@
   background-color: #000;
   float: left;
   padding-top: 5rem;
-  position: fixed;
   min-height: 100%;
   z-index: 1;
   top: 0;
@@ -96,4 +96,10 @@
   position: absolute;
   right: $Small_font;
   top: 13px;
+}
+@mixin Display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

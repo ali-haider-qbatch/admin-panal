@@ -15,12 +15,10 @@ import Strategy from "../AdminComponent/Strategy";
 export class Routes extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       sideBar: true,
     };
   }
-
   toggleSideBar = () => {
     this.setState((state) => {
       return { sideBar: !state.sideBar };
@@ -102,7 +100,6 @@ export class Routes extends Component {
             />
           ))}
         </Switch>
-
         <Switch>
           {this.routes.map((route, index) => {
             return (
@@ -119,5 +116,4 @@ export class Routes extends Component {
     );
   }
 }
-
 export default Routes;

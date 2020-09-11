@@ -53,10 +53,8 @@ function ListedItem() {
                       >
                         Update status
                       </Dropdown.Toggle>
-
                       <Dropdown.Menu className="p-0">
                         <Dropdown.Item href="#/action-1">
-                          {" "}
                           <label class="form-check-label">
                             <input
                               type="radio"
@@ -78,7 +76,6 @@ function ListedItem() {
                         </Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
-
                     <Box className="edit-button">
                       <AiOutlineEdit />
                       Update Item
@@ -128,7 +125,6 @@ function ListedItem() {
               </Row>
             </Col>
           </Row>
-
           <Box>
             <Box className="Dashboard-Table ">
               <Table className="Inner_Dashboard_table table-md table-responsive">
@@ -379,5 +375,4 @@ function ListedItem() {
     </React.Fragment>
   );
 }
-
 export default ListedItem;

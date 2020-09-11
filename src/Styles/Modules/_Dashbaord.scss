@@ -6,11 +6,7 @@
   padding: 1rem;
 }
 .Inner-Detail {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+  @include Display;
   .inner-svg {
     width: 1.87rem;
     height: 1.87rem;
@@ -57,10 +53,6 @@
 .OrderId {
   color: $smallFont_Color;
   font-size: $Small_font;
-}
-.Amount_Detail {
-  display: flex;
-  flex-direction: row;
 }
 .Inner-Body {
   padding: 0px 5rem 5rem 5rem;

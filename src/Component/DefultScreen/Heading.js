@@ -9,7 +9,6 @@ export class Heading extends Component {
       align: props.align,
     };
   }
-
   render() {
     return (
       <React.Fragment>

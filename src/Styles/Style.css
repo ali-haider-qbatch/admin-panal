@@ -40,7 +40,7 @@
 
 form .form-control:focus {
   background-color: transparent;
-  border-color: none;
+  border-color: #ccc;
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -54,6 +54,24 @@ form .form-control:focus {
           box-shadow: 0 0 10px #ccc;
   position: fixed;
   z-index: 1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.dropdown .Strategy:hover {
+  background-color: #fff;
+  border-color: #c6cbd4;
+}
+
+a:focus {
+  outline: 0;
 }
 
 .Logo {
@@ -98,8 +116,7 @@ form .form-control:focus {
   background-color: #0a8dcd;
   width: 100%;
   color: #fff;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   font-size: 0.8rem;
 }
 
@@ -129,7 +146,6 @@ form .form-control:focus {
   background-color: #000;
   float: left;
   padding-top: 5rem;
-  position: fixed;
   min-height: 100%;
   z-index: 1;
   top: 0;
@@ -152,7 +168,6 @@ form .form-control:focus {
   background-color: #000;
   float: left;
   padding-top: 5rem;
-  position: fixed;
   min-height: 100%;
   z-index: 1;
   top: 0;
@@ -170,9 +185,6 @@ form .form-control:focus {
 
 @media (min-width: 992px) {
   .SideMenu {
-    width: 12.5rem;
-  }
-  .open {
     width: 12.5rem;
   }
 }
@@ -268,7 +280,7 @@ form .form-control:focus {
 
 .Search_input .search_icon {
   position: absolute;
-  top: 9px;
+  top: 8px;
   left: 7px;
 }
 
@@ -280,6 +292,7 @@ form .form-control:focus {
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
+  background-color: transparent;
 }
 
 .Search_input .list_icon {
@@ -318,16 +331,6 @@ form .form-control:focus {
 .OrderId {
   color: #9ba2a7;
   font-size: 0.625rem;
-}
-
-.Amount_Detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .Inner-Body {
@@ -704,7 +707,7 @@ form .form-control:focus {
 
 .Search_input_ListItem .search_icon {
   position: absolute;
-  top: 9px;
+  top: 8px;
   left: 7px;
 }
 
@@ -716,6 +719,7 @@ form .form-control:focus {
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
+  background-color: transparent;
 }
 
 .Search_input_ListItem .list_icon {
@@ -762,9 +766,9 @@ form .form-control:focus {
 
 .Back-arrow {
   background-color: #fff;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
   margin: 0 8px;
   padding: 3px;
 }

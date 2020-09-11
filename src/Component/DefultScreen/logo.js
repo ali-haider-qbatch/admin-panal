@@ -13,5 +13,4 @@ export class logo extends Component {
     );
   }
 }
-
 export default logo;
