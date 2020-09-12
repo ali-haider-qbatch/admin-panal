@@ -17,10 +17,11 @@
 }
 .form-group {
   label {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .form-control {
-    font-size: 12px;
+    font-size: 0.75rem;
     border: 1px solid $Filter-border-color;
+    resize: none;
   }
 }

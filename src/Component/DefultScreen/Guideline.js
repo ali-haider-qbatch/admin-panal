@@ -3,7 +3,7 @@ import Box from "@material-ui/core/Box";
 function Guideline() {
   return (
     <React.Fragment>
-      <Box className="Guideline">
+      <Box className="Guideline" borderRadius="borderRadius">
         <h2 className="font-weight-bold">Guidlines</h2>
         <Box>
           <ul className="Guideline-list">

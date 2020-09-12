@@ -5,7 +5,7 @@
 }
 form .form-control:focus {
   background-color: transparent;
-  border-color: #ccc;
+  border-color: $border_Color;
   outline: 0;
   box-shadow: none;
 }
@@ -13,7 +13,7 @@ form .form-control:focus {
   background-color: $White-color;
   width: 100%;
   min-height: 50px;
-  box-shadow: 0 0 10px $border_Color;
+  box-shadow: 0 0 0.625rem $border_Color;
   position: fixed;
   z-index: 1;
 }
@@ -22,11 +22,11 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
-  -webkit-text-fill-color: #000 !important;
+  -webkit-text-fill-color: $black_color !important;
 }
 .dropdown .Strategy:hover {
-  background-color: #fff;
-  border-color: #c6cbd4;
+  background-color: $White-color;
+  border-color: $Filter-border-color;
 }
 a:focus {
   outline: 0;

@@ -16,7 +16,7 @@ function ProductDetail() {
           <Box onClick={() => history.goBack()} className="GoBack">
             <span className="Back-arrow ">
               <IoIosArrowBack size={17} />
-            </span>{" "}
+            </span>
             Back to Product
           </Box>
           <Row>
@@ -55,7 +55,7 @@ function ProductDetail() {
                     </Form.Label>
                     <Form.Control
                       as="textarea"
-                      rows="3"
+                      rows="4"
                       placeholder="Product Description  "
                     />
                   </Form.Group>

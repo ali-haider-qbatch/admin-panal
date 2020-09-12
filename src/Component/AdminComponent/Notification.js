@@ -21,7 +21,7 @@ function Notification() {
           <Heading Heading="Add Notification" align="left" />
           <Row>
             <Col md={8}>
-              <Box className="Notification">
+              <Box className="Notification" borderRadius="border">
                 <Form>
                   <Inputs
                     type="text"
@@ -34,7 +34,7 @@ function Notification() {
                     </Form.Label>
                     <Form.Control
                       as="textarea"
-                      rows="3"
+                      rows="4"
                       placeholder="Description of Title"
                     />
                   </Form.Group>
@@ -84,7 +84,7 @@ function MyVerticallyCenteredModal(props) {
       id="Hours-Modal"
       {...props}
       size="sm"
-      aria-labelledby="contained-modal-title-vcenter"
+      // aria-labelledby="contained-modal-title-center"
       centered
     >
       <Modal.Body>

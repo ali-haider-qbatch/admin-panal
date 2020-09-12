@@ -74,13 +74,9 @@ function Dashboard() {
                   Filter By Product
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
+                  <Dropdown.Item>Action</Dropdown.Item>
+                  <Dropdown.Item>Another action</Dropdown.Item>
+                  <Dropdown.Item>Something else</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </Col>
@@ -91,13 +87,9 @@ function Dashboard() {
                   Email
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
+                  <Dropdown.Item>Action</Dropdown.Item>
+                  <Dropdown.Item>Another action</Dropdown.Item>
+                  <Dropdown.Item>Something else</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </Col>
@@ -108,13 +100,9 @@ function Dashboard() {
                     <TiUser className="Button-icon" /> Filter By Customer Name
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      Another action
-                    </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
-                    </Dropdown.Item>
+                    <Dropdown.Item>Action</Dropdown.Item>
+                    <Dropdown.Item>Another action</Dropdown.Item>
+                    <Dropdown.Item>Something else</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Box>
@@ -294,7 +282,7 @@ function Dashboard() {
                   <td>BS2563BS</td>
                   <td>5</td>
                   <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>johndoe@gmail.com</td>
                   <td>@fat</td>
                   <td>$200</td>
                 </tr>

@@ -50,8 +50,8 @@ form .form-control:focus {
   background-color: #fff;
   width: 100%;
   min-height: 50px;
-  -webkit-box-shadow: 0 0 10px #ccc;
-          box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 0.625rem #ccc;
+          box-shadow: 0 0 0.625rem #ccc;
   position: fixed;
   z-index: 1;
 }
@@ -67,7 +67,7 @@ input:-webkit-autofill:active {
 
 .dropdown .Strategy:hover {
   background-color: #fff;
-  border-color: #c6cbd4;
+  border-color: #8894a5;
 }
 
 a:focus {
@@ -104,12 +104,13 @@ a:focus {
 }
 
 .form-group label {
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 
 .form-group .form-control {
-  font-size: 12px;
+  font-size: 0.75rem;
   border: 1px solid #8894a5;
+  resize: none;
 }
 
 #DashboardButton {
@@ -195,23 +196,23 @@ a:focus {
 
 .list-unstyled .Dashboard-link {
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
   display: inline-block;
   width: 100%;
   cursor: pointer;
   padding: 1rem 2rem;
 }
 
-.list-unstyled .active {
+.list-unstyled .Dashboard-link:hover {
+  text-decoration: none;
+}
+
+.list-unstyled .Dashboard-link.active {
   border-left: 3px solid #098dcd;
 }
 
-.list-unstyled .active .sidebar_Icon {
+.list-unstyled .Dashboard-link.active .sidebar_Icon {
   color: #0a8dcd;
-}
-
-.list-unstyled :hover {
-  text-decoration: none;
 }
 
 .list-unstyled .Dashboard-link:hover {
@@ -360,7 +361,7 @@ a:focus {
   color: #fff;
   border: none;
   height: 24px;
-  margin: 10px 6px;
+  margin: 0.625rem 6px;
   border-radius: 0.31rem;
   padding: 4px 24px;
 }
@@ -401,6 +402,7 @@ a:focus {
 
 .Notification .form-control {
   width: 50%;
+  resize: none;
 }
 
 .Notification-Button {
@@ -599,12 +601,6 @@ a:focus {
   font-size: 0.75rem;
 }
 
-@media (max-width: 767px) {
-  .Password_button {
-    margin-bottom: 0.5rem;
-  }
-}
-
 .filters::after {
   position: absolute;
   right: 0.625rem;
@@ -615,7 +611,7 @@ a:focus {
   background-color: #0a8dcd;
   padding: 0.5rem 1rem;
   color: #fff;
-  margin: 0px 10px;
+  margin: 0px 0.625rem;
   border-radius: 2px;
   font-size: 0.625rem;
   font-weight: 700;
@@ -632,7 +628,7 @@ a:focus {
   background-color: #db3a3b;
   padding: 0.5rem 1rem;
   color: #fff;
-  margin: 0px 10px;
+  margin: 0px 0.625rem;
   border-radius: 2px;
   font-size: 0.625rem;
   font-weight: 700;
@@ -649,7 +645,7 @@ a:focus {
   background-color: #21a16c;
   padding: 0.5rem 1rem;
   color: #fff;
-  margin: 0px 10px;
+  margin: 0px 0.625rem;
   border-radius: 2px;
   font-size: 0.625rem;
   font-weight: 700;
@@ -668,7 +664,7 @@ a:focus {
 
 .modal-para {
   font-size: 0.75rem;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   margin-left: 0.8rem;
 }
 
@@ -678,7 +674,7 @@ a:focus {
   border: none;
   margin-right: 0.4rem;
   height: 24px;
-  margin: 10px 6px;
+  margin: 0.625rem 6px;
   border-radius: 2px;
   padding: 0 23px;
   font-size: 0.625rem;
@@ -690,7 +686,7 @@ a:focus {
   border: none;
   margin-right: 0.4rem;
   height: 24px;
-  margin: 10px 6px;
+  margin: 0.625rem 6px;
   border-radius: 2px;
   padding: 0 23px;
   font-size: 0.625rem;
@@ -897,7 +893,6 @@ a:focus {
 .Guideline {
   background-color: #fff;
   padding: 1.5rem;
-  border-radius: 2px;
   padding-left: 1.4rem;
   margin-bottom: 0.5rem;
 }
@@ -949,12 +944,12 @@ a:focus {
 }
 
 .Strategy-Form .Strategy_number {
-  font-size: 12px;
+  font-size: 0.75rem;
   border: 1px solid #8894a5;
 }
 
 .Strategy-Form .Strategy_number .form-label {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .Add_button {

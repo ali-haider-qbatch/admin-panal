@@ -3,13 +3,13 @@
 .Guideline {
   @include White-Background;
   padding: 1.5rem;
-  border-radius: $border_Radius;
   padding-left: 1.4rem;
   margin-bottom: 0.5rem;
 }
 .Guideline-list {
   font-size: 0.75rem;
   list-style: none;
+
   .Guideline-list-item::before {
     content: "\2022";
     color: $Guideline-list-color;

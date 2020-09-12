@@ -5,7 +5,7 @@ import { FiSettings } from "react-icons/fi";
 import { ImHome } from "react-icons/im";
 import { VscTasklist } from "react-icons/vsc";
 import { HiOutlineBell } from "react-icons/hi";
-import { RiLogoutBoxLine } from "react-icons/ri";
+import { BiLogOut } from "react-icons/bi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsViewList } from "react-icons/bs";
 function Sidebar(props) {
@@ -76,7 +76,7 @@ function Sidebar(props) {
           </li>
           <li>
             <NavLink exact to="/" className="Dashboard-link">
-              <RiLogoutBoxLine className="sidebar_Icon" />
+              <BiLogOut className="sidebar_Icon" />
               Log Out
             </NavLink>
           </li>

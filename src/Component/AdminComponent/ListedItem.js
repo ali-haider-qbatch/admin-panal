@@ -54,7 +54,7 @@ function ListedItem() {
                         Update status
                       </Dropdown.Toggle>
                       <Dropdown.Menu className="p-0">
-                        <Dropdown.Item href="#/action-1">
+                        <Dropdown.Item>
                           <label class="form-check-label">
                             <input
                               type="radio"
@@ -64,7 +64,7 @@ function ListedItem() {
                             Set Online
                           </label>
                         </Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">
+                        <Dropdown.Item>
                           <label class="form-check-label ">
                             <input
                               type="radio"
@@ -155,6 +155,8 @@ function ListedItem() {
                     <td>Otto</td>
                     <td>@mdo</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -169,6 +171,8 @@ function ListedItem() {
                     <td>@fat</td>
                     <td>@fat</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -183,6 +187,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -197,6 +203,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -211,6 +219,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -225,6 +235,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -239,6 +251,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -253,6 +267,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -267,6 +283,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -281,6 +299,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -295,6 +315,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -309,6 +331,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -323,6 +347,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -337,6 +363,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -351,6 +379,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>John Doe</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                   <tr>
                     <td>
@@ -365,6 +395,8 @@ function ListedItem() {
                     <td>johndoe@gmail.com</td>
                     <td>F217</td>
                     <td>$200</td>
+                    <td>BS2563BS</td>
+                    <td>live</td>
                   </tr>
                 </tbody>
               </Table>

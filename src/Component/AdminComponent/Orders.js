@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
-import { Container, Row, Col, Table, Dropdown } from "react-bootstrap";
+import { Container, Row, Col, Table, Dropdown, Form } from "react-bootstrap";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FiList } from "react-icons/fi";
 import "date-fns";
@@ -30,7 +30,6 @@ function Dashboard() {
                 <Dropdown.Toggle variant="light" className="filters">
                   <BiCalendar className="Button-icon" /> Filter By Date
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <MuiPickersUtilsProvider utils={DateFnsUtils}>
                     <KeyboardDatePicker
@@ -89,13 +88,9 @@ function Dashboard() {
                     <TiUser className="Button-icon" /> Filter By Customer Name
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      Another action
-                    </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
-                    </Dropdown.Item>
+                    <Dropdown.Item>Action</Dropdown.Item>
+                    <Dropdown.Item>Another action</Dropdown.Item>
+                    <Dropdown.Item>Something else</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Box>
@@ -109,7 +104,7 @@ function Dashboard() {
               <Col md={12}>
                 <Box className="Search_input">
                   <AiOutlineSearch className="search_icon" />
-                  <form class="form-inline  md-form form-sm mt-0 w-100 position-relative">
+                  <Form class="form-inline  md-form form-sm mt-0 w-100 position-relative">
                     <input
                       class="form-control form-control-sm ml-3 w-100 border-0 position-relative"
                       id="search-bar"
@@ -118,7 +113,7 @@ function Dashboard() {
                       aria-label="Search"
                     />
                     <FiList className="list_icon" />
-                  </form>
+                  </Form>
                 </Box>
               </Col>
             </Row>
@@ -159,7 +154,7 @@ function Dashboard() {
                   <td>BS2563BS</td>
                   <td>5</td>
                   <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>johndoe@gmail.com</td>
                   <td>@fat</td>
                   <td>6/04/2017, 10:30</td>
                   <td>$200</td>

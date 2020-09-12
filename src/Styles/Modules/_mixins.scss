@@ -49,7 +49,7 @@
 @mixin function-button {
   padding: $Buttons_Padding;
   color: $White-color;
-  margin: 0px 10px;
+  margin: 0px 0.625rem;
   border-radius: $border_Radius;
   font-size: $Small_font;
   font-weight: 700;
@@ -80,7 +80,7 @@
   border: none;
   margin-right: 0.4rem;
   height: 24px;
-  margin: 10px 6px;
+  margin: 0.625rem 6px;
   border-radius: $border_Radius;
   padding: 0 23px;
   font-size: 0.625rem;
