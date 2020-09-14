@@ -26,5 +26,6 @@ $Buttons_Padding: 0.5rem 1rem;
 $border_Radius: 2px;
 $Small_font: 0.625rem;
 $Medium-font: 0.8rem;
+$input-Boxshahdow: #10161a33 !default;
 //GLOBAL BOX SHADOW
-$base-box-shadow: 0 0 10px $border_Color;
+$base-box-shadow: 0px 2px 6px $input-Boxshahdow;

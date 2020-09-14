@@ -25,8 +25,8 @@
 }
 
 .Box-Shadow {
-  -webkit-box-shadow: 0 0 10px #ccc;
-          box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0px 2px 6px #10161a33;
+          box-shadow: 0px 2px 6px #10161a33;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -74,8 +74,28 @@ a:focus {
   outline: 0;
 }
 
+.Table-pagination .pagination {
+  margin: 0 2.75rem;
+}
+
+.Table-pagination .page-link {
+  font-size: 12px;
+  color: #9ea0a1;
+  background-color: #fff;
+  border: 1px solid #9b9b9b;
+  margin: 0 3px;
+}
+
+.Table-pagination .page-link:hover {
+  z-index: 2;
+  color: #0056b3;
+  text-decoration: none;
+  border-color: #0a8dcd;
+  background-color: transparent;
+}
+
 .Logo {
-  margin-top: 4rem;
+  margin-top: 5rem;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -104,7 +124,7 @@ a:focus {
 }
 
 .form-group label {
-  font-size: 0.625rem;
+  font-size: 0.8rem;
 }
 
 .form-group .form-control {
@@ -257,9 +277,13 @@ a:focus {
   background-color: #d4eaf6;
   border-radius: 50%;
   padding-left: 0.43rem;
-  padding-top: 0.06rem;
-  color: #49aada;
+  padding-top: 0.2rem;
   cursor: pointer;
+}
+
+.Inner-Detail .Dashboard-icon {
+  width: 15px;
+  height: 15px;
 }
 
 .Inner-Detail .border-right {
@@ -274,8 +298,8 @@ a:focus {
   position: relative;
   background-color: #fff;
   border-radius: 3px;
-  -webkit-box-shadow: 0 0 10px #ccc;
-          box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0px 2px 6px #10161a33;
+          box-shadow: 0px 2px 6px #10161a33;
   margin-bottom: 0.5rem;
 }
 
@@ -283,6 +307,7 @@ a:focus {
   position: absolute;
   top: 8px;
   left: 7px;
+  color: #5c7080;
 }
 
 .Search_input #search-bar {
@@ -299,6 +324,7 @@ a:focus {
 .Search_input .list_icon {
   position: absolute;
   right: 2px;
+  top: 7px;
 }
 
 .Dashboard-Table .Inner_Dashboard_table {
@@ -306,6 +332,7 @@ a:focus {
   display: revert;
   font-size: 0.625rem;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .Dashboard-Table .Inner_Dashboard_table .Table-header {
@@ -332,6 +359,7 @@ a:focus {
 .OrderId {
   color: #9ba2a7;
   font-size: 0.625rem;
+  text-transform: uppercase;
 }
 
 .Inner-Body {
@@ -614,14 +642,13 @@ a:focus {
   margin: 0px 0.625rem;
   border-radius: 2px;
   font-size: 0.625rem;
-  font-weight: 700;
   cursor: pointer;
   margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .edit-button svg {
-  margin-right: 2px;
+  margin-right: 5px;
 }
 
 .Delete-button {
@@ -631,14 +658,13 @@ a:focus {
   margin: 0px 0.625rem;
   border-radius: 2px;
   font-size: 0.625rem;
-  font-weight: 700;
   cursor: pointer;
   margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .Delete-button svg {
-  margin-right: 2px;
+  margin-right: 5px;
 }
 
 .Add-button {
@@ -648,14 +674,13 @@ a:focus {
   margin: 0px 0.625rem;
   border-radius: 2px;
   font-size: 0.625rem;
-  font-weight: 700;
   cursor: pointer;
   margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .Add-button svg {
-  margin-right: 2px;
+  margin-right: 5px;
 }
 
 .ProductDetailButton:hover {
@@ -696,8 +721,8 @@ a:focus {
   position: relative;
   background-color: #fff;
   border-radius: 3px;
-  -webkit-box-shadow: 0 0 10px #ccc;
-          box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0px 2px 6px #10161a33;
+          box-shadow: 0px 2px 6px #10161a33;
   margin-bottom: 0.5rem;
 }
 
@@ -705,6 +730,7 @@ a:focus {
   position: absolute;
   top: 8px;
   left: 7px;
+  color: #5c7080;
 }
 
 .Search_input_ListItem #search-bar {
@@ -721,6 +747,7 @@ a:focus {
 .Search_input_ListItem .list_icon {
   position: absolute;
   right: 2px;
+  top: 7px;
 }
 
 .dropdown .btn-outline-secondary {
@@ -754,19 +781,22 @@ a:focus {
 }
 
 .GoBack {
-  display: inline-block;
   cursor: pointer;
   font-size: 0.8rem;
   font-weight: 600;
+  display: inline;
 }
 
 .Back-arrow {
   background-color: #fff;
-  width: 30px;
-  height: 30px;
   border-radius: 50px;
-  margin: 0 8px;
   padding: 3px;
+  float: left;
+}
+
+.back-product {
+  margin: 4px 10px;
+  font-size: 14px;
 }
 
 .Buttons .Cancel {
@@ -856,10 +886,11 @@ a:focus {
 }
 
 .label_File {
-  font-size: 0.75rem;
+  font-size: 1rem;
   position: absolute;
   left: 13px;
   top: 53px;
+  color: #9a9ba1;
 }
 
 #formCheck-api-regular {
@@ -900,6 +931,7 @@ a:focus {
 .Guideline-list {
   font-size: 0.75rem;
   list-style: none;
+  color: #9b9b9b;
 }
 
 .Guideline-list .Guideline-list-item::before {

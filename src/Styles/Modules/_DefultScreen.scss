@@ -31,3 +31,22 @@ input:-webkit-autofill:active {
 a:focus {
   outline: 0;
 }
+.Table-pagination {
+  .pagination {
+    margin: 0 2.75rem;
+  }
+  .page-link {
+    font-size: 12px;
+    color: #9ea0a1;
+    background-color: #fff;
+    border: 1px solid #9b9b9b;
+    margin: 0 3px;
+    &:hover {
+      z-index: 2;
+      color: #0056b3;
+      text-decoration: none;
+      border-color: #0a8dcd;
+      background-color: transparent;
+    }
+  }
+}

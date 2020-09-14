@@ -1,6 +1,14 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
-import { Container, Row, Col, Table, Dropdown, Form } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Table,
+  Dropdown,
+  Form,
+  Pagination,
+} from "react-bootstrap";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FiList } from "react-icons/fi";
 import "date-fns";
@@ -118,218 +126,240 @@ function Dashboard() {
               </Col>
             </Row>
           </Box>
-          <Box className="Dashboard-Table">
-            <Table className="Inner_Dashboard_table table-md table-responsive">
-              <thead className="Table-header">
-                <tr>
-                  <td></td>
-                  <td>Order Id</td>
-                  <td>Number of items</td>
-                  <td>Customer Name</td>
-                  <td>Customer Email</td>
-                  <td>Bin Location</td>
-                  <td>Pickup Date/Time</td>
-                  <td>Total</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
+          <Box mb={4}>
+            <Box className="Dashboard-Table">
+              <Table className="Inner_Dashboard_table table-md table-responsive">
+                <thead className="Table-header">
+                  <tr>
+                    <td></td>
+                    <td>Order Id</td>
+                    <td>Number of items</td>
+                    <td>Customer Name</td>
+                    <td>Customer Email</td>
+                    <td>Bin Location</td>
+                    <td>Pickup Date/Time</td>
+                    <td>Total</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
 
-                  <td>BS2563BS</td>
-                  <td>6</td>
-                  <td>@mdo</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
+                    <td>BS2563BS</td>
+                    <td>6</td>
+                    <td>@mdo</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
 
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>Thornton</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>@fat</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>8</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>Thornton</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>@fat</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>8</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
 
-                  <td>BS2563BS</td>
-                  <td>7</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>6</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>6</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>John Doe</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>6/04/2017, 10:30</td>
-                  <td>$200</td>
-                </tr>
-              </tbody>
-            </Table>
+                    <td>BS2563BS</td>
+                    <td>7</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>6</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>6</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>John Doe</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>6/04/2017, 10:30</td>
+                    <td>$200</td>
+                  </tr>
+                </tbody>
+              </Table>
+            </Box>
+
+            <Box
+              display="flex"
+              justifyContent="flex-end"
+              bgcolor="#fff"
+              pb={2}
+              className="Table-pagination"
+            >
+              {" "}
+              <Pagination>
+                <Pagination.Prev />
+                <Pagination.Item>{1}</Pagination.Item>
+                <Pagination.Item>{2}</Pagination.Item>
+                <Pagination.Item>{3}</Pagination.Item>
+                <Pagination.Item>{4}</Pagination.Item>
+                <Pagination.Item>{5}</Pagination.Item>
+                <Pagination.Ellipsis />
+                <Pagination.Next />
+              </Pagination>
+            </Box>
           </Box>
         </Container>
       </Box>

@@ -9,6 +9,8 @@ import {
   Col,
   Dropdown,
   Table,
+  Form,
+  Pagination,
 } from "react-bootstrap";
 import TableImg from "../../Assets/table/mobile.png";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -18,18 +20,29 @@ import { FaRegTimesCircle } from "react-icons/fa";
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { AiFillWarning } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { Input } from "@material-ui/core";
 function ListedItem() {
   const [smShow, setSmShow] = useState(false);
   const onHide = () => setSmShow(false);
+  let active = 2;
+  let items = [];
+  for (let number = 1; number <= 5; number++) {
+    items.push(
+      <Pagination.Item key={number} active={number === active}>
+        {number}
+      </Pagination.Item>
+    );
+  }
+
   return (
     <React.Fragment>
       <Box id="Dashboard">
         <Container>
           <Row m={0}>
             <Col lg={6} md={5} sm={12} xs={12}>
-              <Box className="Search_input_ListItem p-0 pos">
+              <Box className="Search_input_ListItem p-0">
                 <AiOutlineSearch className="search_icon" />
-                <form class="form-inline  md-form form-sm mt-0 w-100 position-relative">
+                <Form class="form-inline  md-form form-sm mt-0 w-100 position-relative">
                   <input
                     class="form-control form-control-sm ml-3 w-100 border-0 position-relative"
                     id="search-bar"
@@ -38,7 +51,7 @@ function ListedItem() {
                     aria-label="Search"
                   />
                   <FiList className="list_icon" />
-                </form>
+                </Form>
               </Box>
             </Col>
             <Col lg={6} md={7} sm={12} xs={12}>
@@ -96,7 +109,6 @@ function ListedItem() {
                       size="sm"
                       show={smShow}
                       onHide={() => setSmShow(false)}
-                      aria-labelledby="example-modal-sizes-title-sm"
                       centered
                     >
                       <Modal.Body>
@@ -125,7 +137,7 @@ function ListedItem() {
               </Row>
             </Col>
           </Row>
-          <Box>
+          <Box mb={4}>
             <Box className="Dashboard-Table ">
               <Table className="Inner_Dashboard_table table-md table-responsive">
                 <thead className="Table-header">
@@ -143,7 +155,7 @@ function ListedItem() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -159,7 +171,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -175,7 +187,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -191,7 +203,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -207,7 +219,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -223,7 +235,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -255,7 +267,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -271,7 +283,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -287,7 +299,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -303,7 +315,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -319,7 +331,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -335,7 +347,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -351,7 +363,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -367,7 +379,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -383,7 +395,7 @@ function ListedItem() {
                     <td>live</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>
@@ -400,6 +412,25 @@ function ListedItem() {
                   </tr>
                 </tbody>
               </Table>
+              <Box
+                display="flex"
+                justifyContent="flex-end"
+                bgcolor="#fff"
+                pb={2}
+                className="Table-pagination"
+              >
+                {" "}
+                <Pagination>
+                  <Pagination.Prev />
+                  <Pagination.Item>{1}</Pagination.Item>
+                  <Pagination.Item>{2}</Pagination.Item>
+                  <Pagination.Item>{3}</Pagination.Item>
+                  <Pagination.Item>{4}</Pagination.Item>
+                  <Pagination.Item>{5}</Pagination.Item>
+                  <Pagination.Ellipsis />
+                  <Pagination.Next />
+                </Pagination>
+              </Box>
             </Box>
           </Box>
         </Container>

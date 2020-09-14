@@ -32,6 +32,7 @@
     position: absolute;
     top: 8px;
     left: 7px;
+    color: #5c7080;
   }
   #search-bar {
     background-color: transparent;
@@ -44,6 +45,7 @@
   .list_icon {
     position: absolute;
     right: 2px;
+    top: 7px;
   }
 }
 @mixin function-button {
@@ -52,12 +54,11 @@
   margin: 0px 0.625rem;
   border-radius: $border_Radius;
   font-size: $Small_font;
-  font-weight: 700;
   cursor: pointer;
   margin-bottom: 0.5rem;
   text-align: center;
   svg {
-    margin-right: 2px;
+    margin-right: 5px;
   }
 }
 @mixin Sidebar {

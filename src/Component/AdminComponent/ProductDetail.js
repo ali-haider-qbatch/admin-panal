@@ -7,6 +7,7 @@ import UploadPic from "../../Assets/table/mobile.png";
 import { Image } from "react-bootstrap";
 import Heading from "../DefultScreen/Heading";
 import Inputs from "../DefultScreen/Inputs";
+import Arrow from "../../Assets/Dashboard/arrow.svg";
 function ProductDetail() {
   let history = useHistory();
   return (
@@ -14,10 +15,13 @@ function ProductDetail() {
       <Box id="Dashboard">
         <Container>
           <Box onClick={() => history.goBack()} className="GoBack">
-            <span className="Back-arrow ">
-              <IoIosArrowBack size={17} />
+            <Box className="Back-arrow ">
+              {/* <IoIosArrowBack size={17} /> */}
+              <Image src={Arrow}></Image>
+            </Box>
+            <span className="font-weight-bold back-product">
+              Back to Product
             </span>
-            Back to Product
           </Box>
           <Row>
             <Col md={6}>
@@ -66,7 +70,7 @@ function ProductDetail() {
               <Box className="Title">
                 <h6 className="font-weight-bold">Images</h6>
                 <Row>
-                  <Col md={6}>
+                  <Col md={8}>
                     <div className="mb-3">
                       <Form.File id="formCheck-api-regular">
                         <Form.File.Label className="label_File">
@@ -77,7 +81,7 @@ function ProductDetail() {
                       <span className="Drop_Box">Drop your photo in box.</span>
                     </div>
                   </Col>
-                  <Col md={6}>
+                  <Col md={4}>
                     <Image src={UploadPic}></Image>
                   </Col>
                 </Row>

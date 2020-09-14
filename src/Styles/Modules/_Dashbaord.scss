@@ -13,9 +13,12 @@
     background-color: $Svg-color;
     border-radius: 50%;
     padding-left: 0.43rem;
-    padding-top: 0.06rem;
-    color: $Svg_Color;
+    padding-top: 0.2rem;
     cursor: pointer;
+  }
+  .Dashboard-icon {
+    width: 15px;
+    height: 15px;
   }
   .border-right {
     border-right: 0.06rem solid $border_Color;
@@ -33,6 +36,7 @@
     display: revert;
     font-size: 0.625rem;
     text-align: left;
+    margin-bottom: 0;
     .Table-header {
       background: $Table-header;
     }
@@ -53,6 +57,7 @@
 .OrderId {
   color: $smallFont_Color;
   font-size: $Small_font;
+  text-transform: uppercase;
 }
 .Inner-Body {
   padding: 0px 5rem 5rem 5rem;

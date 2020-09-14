@@ -9,6 +9,7 @@ import {
   Dropdown,
   Modal,
   Button,
+  Pagination,
 } from "react-bootstrap";
 import { GiPaperBoat } from "react-icons/gi";
 import { HiOutlineCurrencyDollar } from "react-icons/hi";
@@ -27,6 +28,9 @@ import Background from "../../Assets/Modal/PickListTop.svg";
 import { AiOutlinePrinter } from "react-icons/ai";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
+import Basket from "../../Assets/Dashboard/shopping_basket.svg";
+import Dollar from "../../Assets/Dashboard/Dollar.svg";
+import Cross from "../../Assets/Dashboard/Cross.svg";
 const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
@@ -116,7 +120,7 @@ function Dashboard() {
               <Col md={4}>
                 <Box className="Inner-Detail border-right">
                   <span className="inner-svg">
-                    <GiPaperBoat size={15} />
+                    <Image src={Basket} className="Dashboard-icon" />
                   </span>
                   <h1 className="mt-1 font-weight-bold">10</h1>
                   <small className="Caption">TODAY PICKUP</small>
@@ -125,7 +129,7 @@ function Dashboard() {
               <Col md={4}>
                 <Box className="Inner-Detail border-right">
                   <span className="inner-svg">
-                    <HiOutlineCurrencyDollar size={15} />
+                    <Image src={Dollar} className="Dashboard-icon" />
                   </span>
                   <h1 className="mt-1 font-weight-bold">50</h1>
                   <small className="Caption">EARNED TODAY</small>
@@ -134,7 +138,7 @@ function Dashboard() {
               <Col md={4}>
                 <Box className="Inner-Detail">
                   <span className="inner-svg">
-                    <TiTimes size={15} />
+                    <Image src={Cross} className="Dashboard-icon" />
                   </span>
                   <h1 className="mt-1 font-weight-bold">3000</h1>
                   <small className="Caption">CANCELLED TODAY </small>
@@ -142,7 +146,7 @@ function Dashboard() {
               </Col>
             </Row>
           </Box>
-          <Box mt={2} mb={2}>
+          <Box mt={2} mb={1}>
             <Row>
               <Col md={8}>
                 <Box className="Search_input">
@@ -175,7 +179,6 @@ function Dashboard() {
                   size="md"
                   show={smShow}
                   onHide={() => setSmShow(false)}
-                  aria-labelledby="example-modal-sizes-title-sm"
                   centered
                 >
                   <Modal.Body className="p-0">
@@ -244,246 +247,267 @@ function Dashboard() {
               </Col>
             </Row>
           </Box>
-          <Box className="Dashboard-Table">
-            <Table className="Inner_Dashboard_table table-md table-responsive">
-              <thead className="Table-header">
-                <tr>
-                  <td colspan="2"></td>
-                  <td>Reservation Id</td>
-                  <td>quantity</td>
-                  <td>Customer Name</td>
-                  <td>Bin Location</td>
-                  <td>Expire Date/Time</td>
-                  <td>Total</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>6</td>
-                  <td>@mdo</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>Thornton</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>@fat</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>8</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>7</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>6</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>6</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>John Doe</td>
-                  <td>$200</td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>
-                    <Image className="tableImg" src={TableImg} />
-                  </td>
-                  <td>BS2563BS</td>
-                  <td>5</td>
-                  <td>John Doe</td>
-                  <td>johndoe@gmail.com</td>
-                  <td>F217</td>
-                  <td>$200</td>
-                </tr>
-              </tbody>
-            </Table>
+          <Box mb={4}>
+            <Box className="Dashboard-Table">
+              <Table className="Inner_Dashboard_table table-md table-responsive">
+                <thead className="Table-header">
+                  <tr>
+                    <td colspan="2"></td>
+                    <td>Reservation Id</td>
+                    <td>quantity</td>
+                    <td>Customer Name</td>
+                    <td>Bin Location</td>
+                    <td>Expire Date/Time</td>
+                    <td>Total</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>6</td>
+                    <td>@mdo</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>Thornton</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>@fat</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>8</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>7</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>6</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>6</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>John Doe</td>
+                    <td>$200</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <Image className="tableImg" src={TableImg} />
+                    </td>
+                    <td>BS2563BS</td>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>johndoe@gmail.com</td>
+                    <td>F217</td>
+                    <td>$200</td>
+                  </tr>
+                </tbody>
+              </Table>
+            </Box>
+            <Box
+              display="flex"
+              justifyContent="flex-end"
+              bgcolor="#fff"
+              pb={2}
+              className="Table-pagination"
+            >
+              {" "}
+              <Pagination>
+                <Pagination.Prev />
+                <Pagination.Item>{1}</Pagination.Item>
+                <Pagination.Item>{2}</Pagination.Item>
+                <Pagination.Item>{3}</Pagination.Item>
+                <Pagination.Item>{4}</Pagination.Item>
+                <Pagination.Item>{5}</Pagination.Item>
+                <Pagination.Ellipsis />
+                <Pagination.Next />
+              </Pagination>
+            </Box>
           </Box>
         </Container>
       </Box>

@@ -1,11 +1,11 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
 import { Container, Row, Col, Dropdown, Form } from "react-bootstrap";
-import Guideline from "../DefultScreen/Guideline";
-import Inputs from "../DefultScreen/Inputs";
+import Guideline from "../DefaultScreen/Guideline";
+import Inputs from "../DefaultScreen/Inputs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import Heading from "../DefultScreen/Heading";
+import Heading from "../DefaultScreen/Heading";
 function Strategy() {
   return (
     <React.Fragment>
@@ -54,7 +54,7 @@ function Strategy() {
                             placeholder="25"
                           />
                         </Col>
-                        <Col md={8}>
+                        <Col md={8} className="pr-0 mt-2 mb-2">
                           <Dropdown>
                             <Dropdown.Toggle
                               variant="light"
@@ -76,7 +76,7 @@ function Strategy() {
                             placeholder="25"
                           />
                         </Col>
-                        <Col md={8}>
+                        <Col md={8} className="pr-0 mt-2 mb-2">
                           <Dropdown>
                             <Dropdown.Toggle
                               variant="light"
@@ -98,7 +98,7 @@ function Strategy() {
                             placeholder="25"
                           />
                         </Col>
-                        <Col md={8}>
+                        <Col md={8} className="pr-0 mt-2 mb-2">
                           <Dropdown>
                             <Dropdown.Toggle
                               variant="light"

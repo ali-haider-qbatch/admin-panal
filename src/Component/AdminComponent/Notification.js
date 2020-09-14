@@ -5,9 +5,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import DateFnsUtils from "@date-io/date-fns";
-import Guideline from "../DefultScreen/Guideline";
-import Inputs from "../DefultScreen/Inputs";
-import Heading from "../DefultScreen/Heading";
+import Guideline from "../DefaultScreen/Guideline";
+import Inputs from "../DefaultScreen/Inputs";
+import Heading from "../DefaultScreen/Heading";
 import {
   MuiPickersUtilsProvider,
   KeyboardDatePicker,
@@ -80,13 +80,7 @@ function MyVerticallyCenteredModal(props) {
   };
   const classes = useStyles();
   return (
-    <Modal
-      id="Hours-Modal"
-      {...props}
-      size="sm"
-      // aria-labelledby="contained-modal-title-center"
-      centered
-    >
+    <Modal id="Hours-Modal" {...props} size="sm" centered>
       <Modal.Body>
         <Box display="flex" flexDirection="column">
           <label class="form-check-label p-2">
