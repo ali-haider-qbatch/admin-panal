@@ -5,8 +5,8 @@ import { IoIosArrowBack } from "react-icons/io";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import UploadPic from "../../Assets/table/mobile.png";
 import { Image } from "react-bootstrap";
-import Heading from "../DefultScreen/Heading";
-import Inputs from "../DefultScreen/Inputs";
+import Heading from "../DefaultScreen/Heading";
+import Inputs from "../DefaultScreen/Inputs";
 import Arrow from "../../Assets/Dashboard/arrow.svg";
 function ProductDetail() {
   let history = useHistory();

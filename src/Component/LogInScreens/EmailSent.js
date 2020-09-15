@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Box from "@material-ui/core/Box";
-import Heading from "../DefultScreen/Heading";
-import Logo from "../DefultScreen/logo";
+import Heading from "../DefaultScreen/Heading";
+import Logo from "../DefaultScreen/logo";
 import EmailSvg from "../../Assets/Email Sent/Emailsent.svg";
-import Buttons from "../DefultScreen/Buttons";
+import Buttons from "../DefaultScreen/Buttons";
 import { Image } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 export class EmailSent extends Component {

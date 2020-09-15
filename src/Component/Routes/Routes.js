@@ -6,7 +6,7 @@ import Dashboard from "../AdminComponent/Dashboard";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Sidebar from "../SideBar/Sidebar";
 import ListedItem from "../AdminComponent/ListedItem";
-import Header from "../DefultScreen/Header";
+import Header from "../DefaultScreen/Header";
 import Notification from "../AdminComponent/Notification";
 import Setting from "../AdminComponent/Setting";
 import ProductDetail from "../AdminComponent/ProductDetail";

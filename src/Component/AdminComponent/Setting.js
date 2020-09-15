@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Button, Row, Col } from "react-bootstrap";
 import Box from "@material-ui/core/Box";
-import Guideline from "../DefultScreen/Guideline";
-import Inputs from "../DefultScreen/Inputs";
-import Heading from "../DefultScreen/Heading";
+import Guideline from "../DefaultScreen/Guideline";
+import Inputs from "../DefaultScreen/Inputs";
+import Heading from "../DefaultScreen/Heading";
 function Setting() {
   return (
     <React.Fragment>

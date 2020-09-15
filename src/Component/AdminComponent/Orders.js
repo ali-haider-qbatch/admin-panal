@@ -143,7 +143,7 @@ function Dashboard() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
 
@@ -156,7 +156,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
 
@@ -169,7 +169,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>
@@ -181,7 +181,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>
@@ -193,7 +193,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
 
@@ -206,7 +206,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>
@@ -218,7 +218,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>
@@ -230,7 +230,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>
@@ -242,7 +242,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>
@@ -254,7 +254,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>
@@ -266,7 +266,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>
@@ -278,7 +278,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>
@@ -290,7 +290,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>
@@ -302,7 +302,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>
@@ -314,7 +314,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>
@@ -326,7 +326,7 @@ function Dashboard() {
                     <td>$200</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className="text-center">
                       <input type="checkbox" />
                     </td>
                     <td>BS2563BS</td>

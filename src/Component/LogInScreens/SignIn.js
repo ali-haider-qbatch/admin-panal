@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Box from "@material-ui/core/Box";
-import Heading from "../DefultScreen/Heading";
-import Logo from "../DefultScreen/logo";
-import Inputs from "../DefultScreen/Inputs";
-import Buttons from "../DefultScreen/Buttons";
+import Heading from "../DefaultScreen/Heading";
+import Logo from "../DefaultScreen/logo";
+import Inputs from "../DefaultScreen/Inputs";
+import Buttons from "../DefaultScreen/Buttons";
 import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 export class SignIn extends Component {
