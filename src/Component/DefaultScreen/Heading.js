@@ -11,13 +11,11 @@ export class Heading extends Component {
   }
   render() {
     return (
-      <React.Fragment>
-        <Box mt={1} mb={4}>
-          <h3 variant="h4" align={this.props.align}>
-            {this.state.Heading}
-          </h3>
-        </Box>
-      </React.Fragment>
+      <Box mt={1} mb={4}>
+        <h3 variant="h4" align={this.props.align}>
+          {this.state.Heading}
+        </h3>
+      </Box>
     );
   }
 }

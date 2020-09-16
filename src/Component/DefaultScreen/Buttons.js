@@ -10,11 +10,9 @@ export class Buttons extends Component {
   }
   render() {
     return (
-      <React.Fragment>
-        <Link to={this.props.navUrl}>
-          <Button id="DashboardButton">{this.state.Name}</Button>
-        </Link>
-      </React.Fragment>
+      <Link to={this.props.navUrl}>
+        <Button id="DashboardButton">{this.state.Name}</Button>
+      </Link>
     );
   }
 }

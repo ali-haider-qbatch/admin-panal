@@ -5,11 +5,9 @@ import Logo from "../../Assets/Logo/logo.png";
 export class logo extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Box display="flex" justifyContent="center" alignItems="center">
-          <Image src={Logo} className="Logo" />
-        </Box>
-      </React.Fragment>
+      <Box display="flex" justifyContent="center" alignItems="center">
+        <Image src={Logo} className="Logo" />
+      </Box>
     );
   }
 }

@@ -250,7 +250,6 @@ a:focus {
 }
 
 .MainBoard {
-  background-color: #fff;
   border-radius: 0.2rem;
   padding: 1rem;
 }
@@ -423,7 +422,6 @@ a:focus {
 }
 
 .Notification {
-  background-color: #fff;
   padding: 2rem;
   border-radius: 2px;
 }
@@ -583,7 +581,6 @@ a:focus {
 }
 
 .Setting {
-  background-color: #fff;
   padding: 2rem;
 }
 
@@ -788,7 +785,6 @@ a:focus {
 }
 
 .Back-arrow {
-  background-color: #fff;
   border-radius: 50px;
   padding: 3px;
   float: left;
@@ -854,7 +850,6 @@ a:focus {
 }
 
 .Title {
-  background-color: #fff;
   border-radius: 2px;
   padding: 2.5rem;
   margin-bottom: 0.625rem;
@@ -922,8 +917,6 @@ a:focus {
 }
 
 .Guideline {
-  background-color: #fff;
-  padding: 1.5rem;
   padding-left: 1.4rem;
   margin-bottom: 0.5rem;
 }
@@ -952,7 +945,6 @@ a:focus {
 }
 
 .Strategy {
-  background-color: #fff;
   padding: 2rem;
 }
 
@@ -978,6 +970,7 @@ a:focus {
 .Strategy-Form .Strategy_number {
   font-size: 0.75rem;
   border: 1px solid #8894a5;
+  margin-top: 0.5rem;
 }
 
 .Strategy-Form .Strategy_number .form-label {

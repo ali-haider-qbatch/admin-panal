@@ -1,7 +1,6 @@
 @import "../Modules/mixins";
 @import "../Modules/Variable";
 .Setting {
-  @include White-Background;
   padding: 2rem;
   .form-control {
     width: 50%;

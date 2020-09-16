@@ -1,7 +1,6 @@
 @import "../Modules/mixins";
 @import "../Modules/Variable";
 .Notification {
-  @include White-Background;
   padding: 2rem;
   border-radius: $border_Radius;
   .form-control {

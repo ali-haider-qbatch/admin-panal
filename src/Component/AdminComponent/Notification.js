@@ -15,60 +15,58 @@ import {
 function Notification() {
   const [modalShow, setModalShow] = React.useState(false);
   return (
-    <React.Fragment>
-      <Box id="Dashboard">
-        <Container>
-          <Heading Heading="Add Notification" align="left" />
-          <Row>
-            <Col md={8}>
-              <Box className="Notification" borderRadius="border">
-                <Form>
-                  <Inputs
-                    type="text"
-                    placeholder="Notification Title"
-                    FormLabel="Title"
+    <Box id="Dashboard">
+      <Container>
+        <Heading Heading="Add Notification" align="left" />
+        <Row>
+          <Col md={8}>
+            <Box className="Notification" borderRadius="border" bgcolor="#fff">
+              <Form>
+                <Inputs
+                  type="text"
+                  placeholder="Notification Title"
+                  FormLabel="Title"
+                />
+                <Form.Group>
+                  <Form.Label className="font-weight-bold">
+                    Description
+                  </Form.Label>
+                  <Form.Control
+                    as="textarea"
+                    rows="4"
+                    placeholder="Description of Title"
                   />
-                  <Form.Group>
-                    <Form.Label className="font-weight-bold">
-                      Description
-                    </Form.Label>
-                    <Form.Control
-                      as="textarea"
-                      rows="4"
-                      placeholder="Description of Title"
-                    />
-                  </Form.Group>
-                </Form>
+                </Form.Group>
+              </Form>
+            </Box>
+            <Box mt={3} className="Notification-Button">
+              <Box>
+                <Button
+                  onClick={() => setModalShow(true)}
+                  className="Schedule"
+                  variant="outline-info"
+                >
+                  Schedule send
+                </Button>
+                <MyVerticallyCenteredModal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
               </Box>
-              <Box mt={3} className="Notification-Button">
-                <Box>
-                  <Button
-                    onClick={() => setModalShow(true)}
-                    className="Schedule"
-                    variant="outline-info"
-                  >
-                    Schedule send
-                  </Button>
-                  <MyVerticallyCenteredModal
-                    show={modalShow}
-                    onHide={() => setModalShow(false)}
-                  />
-                </Box>
-                <Box>
-                  <Button className="Cancel" mr={2}>
-                    Cancel
-                  </Button>
-                  <Button className="Send">Send</Button>
-                </Box>
+              <Box>
+                <Button className="Cancel" mr={2}>
+                  Cancel
+                </Button>
+                <Button className="Send">Send</Button>
               </Box>
-            </Col>
-            <Col md={4}>
-              <Guideline />
-            </Col>
-          </Row>
-        </Container>
-      </Box>
-    </React.Fragment>
+            </Box>
+          </Col>
+          <Col md={4}>
+            <Guideline />
+          </Col>
+        </Row>
+      </Container>
+    </Box>
   );
 }
 function MyVerticallyCenteredModal(props) {
@@ -83,24 +81,24 @@ function MyVerticallyCenteredModal(props) {
     <Modal id="Hours-Modal" {...props} size="sm" centered>
       <Modal.Body>
         <Box display="flex" flexDirection="column">
-          <label class="form-check-label p-2">
-            <input type="radio" class="form-check-input" name="Time" />
+          <label className="form-check-label p-2">
+            <input type="radio" className="form-check-input" name="Time" />
             In 1 hour
           </label>
-          <label class="form-check-label p-2">
-            <input type="radio" class="form-check-input" name="Time" />
+          <label className="form-check-label p-2">
+            <input type="radio" className="form-check-input" name="Time" />
             In 2 hour
           </label>
-          <label class="form-check-label p-2">
-            <input type="radio" class="form-check-input" name="Time" />
+          <label className="form-check-label p-2">
+            <input type="radio" className="form-check-input" name="Time" />
             Tomorrow Morning (8am)
           </label>
-          <label class="form-check-label p-2">
-            <input type="radio" class="form-check-input" name="Time" />
+          <label className="form-check-label p-2">
+            <input type="radio" className="form-check-input" name="Time" />
             Tomorrow Afternoon (1pm)
           </label>
-          <label class="form-check-label p-2">
-            <input type="radio" class="form-check-input" name="Time" />
+          <label className="form-check-label p-2">
+            <input type="radio" className="form-check-input" name="Time" />
             Custom
           </label>
           <Box display="flex">

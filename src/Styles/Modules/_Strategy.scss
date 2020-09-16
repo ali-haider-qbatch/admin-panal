@@ -1,7 +1,6 @@
 @import "../Modules/Variable";
 @import "../Modules/mixins";
 .Strategy {
-  @include White-Background;
   padding: 2rem;
 }
 .dropdown {
@@ -23,6 +22,7 @@
 .Strategy-Form .Strategy_number {
   font-size: 0.75rem;
   border: 1px solid $Input-color;
+  margin-top: 0.5rem;
   .form-label {
     font-size: 0.75rem;
   }

@@ -7,7 +7,6 @@
   display: inline;
 }
 .Back-arrow {
-  @include White-Background;
   border-radius: 50px;
   padding: 3px;
   float: left;
@@ -31,7 +30,6 @@
   }
 }
 .Title {
-  @include White-Background;
   border-radius: $border_Radius;
   padding: 2.5rem;
   margin-bottom: 0.625rem;

@@ -11,19 +11,15 @@ export class Inputs extends Component {
   }
   render() {
     return (
-      <React.Fragment>
-        <Form className="mt-4">
-          <Form.Group controlId="formBasicEmail">
-            <Form.Label className="font-weight-bold">
-              {this.state.FormLabel}
-            </Form.Label>
-            <Form.Control
-              type={this.state.type}
-              placeholder={this.props.placeholder}
-            />
-          </Form.Group>
-        </Form>
-      </React.Fragment>
+      <Form.Group controlId="formBasicEmail" className="mt-4">
+        <Form.Label className="font-weight-bold">
+          {this.state.FormLabel}
+        </Form.Label>
+        <Form.Control
+          type={this.state.type}
+          placeholder={this.props.placeholder}
+        />
+      </Form.Group>
     );
   }
 }

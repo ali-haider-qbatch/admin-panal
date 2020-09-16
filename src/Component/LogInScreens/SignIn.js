@@ -11,43 +11,41 @@ export class SignIn extends Component {
     return (
       <React.Fragment>
         <Box className="Login-Screen-Header" />
-        <Box>
-          <Row className="justify-content-md-center justify-content-lg-center  justify-content-sm-center m-0">
-            <Col lg={4} md={7} sm={12}>
-              <Logo />
-              <Heading Heading="Sign in to BWD" align="center" />
-              <Box
-                boxShadow={2}
-                p={5}
-                color="text.primary"
-                bgcolor="#fff"
-                borderRadius="borderRadius"
+        <Row className="justify-content-md-center justify-content-lg-center  justify-content-sm-center m-0">
+          <Col lg={4} md={7} sm={12}>
+            <Logo />
+            <Heading Heading="Sign in to BWD" align="center" />
+            <Box
+              boxShadow={2}
+              p={5}
+              color="text.primary"
+              bgcolor="#fff"
+              borderRadius="borderRadius"
+            >
+              <h6 align="center" className="Login-font">
+                Please Login in Your Account
+              </h6>
+              <Inputs
+                type="email"
+                placeholder="john@gmail.com"
+                FormLabel="Email Address"
+              />
+              <Inputs
+                type="password "
+                placeholder="******"
+                FormLabel="Password"
+              />
+              <Link
+                align="right"
+                className="Forget-Password"
+                to="/forget_password"
               >
-                <h6 align="center" className="Login-font">
-                  Please Login in Your Account
-                </h6>
-                <Inputs
-                  type="email"
-                  placeholder="john@gmail.com"
-                  FormLabel="Email Address"
-                />
-                <Inputs
-                  type="password "
-                  placeholder="******"
-                  FormLabel="Password"
-                />
-                <Link
-                  align="right"
-                  className="Forget-Password"
-                  to="/forget_password"
-                >
-                  ForgetPassword?
-                </Link>
-                <Buttons Name="Log In" navUrl={"/dashboard"} />
-              </Box>
-            </Col>
-          </Row>
-        </Box>
+                ForgetPassword?
+              </Link>
+              <Buttons Name="Log In" navUrl={"/dashboard"} />
+            </Box>
+          </Col>
+        </Row>
       </React.Fragment>
     );
   }

@@ -1,7 +1,6 @@
 @import "../Modules/Variable";
 @import "../Modules/mixins";
 .MainBoard {
-  @include White-Background;
   border-radius: 0.2rem;
   padding: 1rem;
 }

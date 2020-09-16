@@ -11,30 +11,28 @@ export class EmailSent extends Component {
     return (
       <React.Fragment>
         <Box className="Login-Screen-Header" />
-        <Box>
-          <Row className="justify-content-md-center justify-content-lg-center justify-content-sm-center m-0">
-            <Col lg={4} md={7} sm={12}>
-              <Logo />
-              <Heading Heading="Resetting Password" align="center" />
-              <Box
-                boxShadow={2}
-                p={5}
-                color="text.primary"
-                bgcolor="#fff"
-                borderRadius="borderRadius"
-              >
-                <Box align="center">
-                  <Image src={EmailSvg} />
-                </Box>
-                <p className="instructions">
-                  Please check the email we have sent this instructions to
-                  change password
-                </p>
-                <Buttons Name="Continuous LogIn" navUrl={"/"} />
+        <Row className="justify-content-md-center justify-content-lg-center justify-content-sm-center m-0">
+          <Col lg={4} md={7} sm={12}>
+            <Logo />
+            <Heading Heading="Resetting Password" align="center" />
+            <Box
+              boxShadow={2}
+              p={5}
+              color="text.primary"
+              bgcolor="#fff"
+              borderRadius="borderRadius"
+            >
+              <Box align="center">
+                <Image src={EmailSvg} />
               </Box>
-            </Col>
-          </Row>
-        </Box>
+              <p className="instructions">
+                Please check the email we have sent this instructions to change
+                password
+              </p>
+              <Buttons Name="Continuous LogIn" navUrl={"/"} />
+            </Box>
+          </Col>
+        </Row>
       </React.Fragment>
     );
   }
