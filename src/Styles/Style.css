@@ -917,6 +917,7 @@ a:focus {
 }
 
 .Guideline {
+  padding: 1.5rem;
   padding-left: 1.4rem;
   margin-bottom: 0.5rem;
 }
