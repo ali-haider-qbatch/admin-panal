@@ -251,7 +251,6 @@ a:focus {
 
 .MainBoard {
   border-radius: 0.2rem;
-  padding: 1rem;
 }
 
 .Inner-Detail {
@@ -943,10 +942,6 @@ a:focus {
   position: absolute;
   right: 0.625rem;
   top: 13px;
-}
-
-.Strategy {
-  padding: 2rem;
 }
 
 .dropdown .Strategy {

@@ -1,8 +1,5 @@
 @import "../Modules/Variable";
 @import "../Modules/mixins";
-.Strategy {
-  padding: 2rem;
-}
 .dropdown {
   .Strategy {
     @include Dropdown;

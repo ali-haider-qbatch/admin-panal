@@ -2,7 +2,6 @@
 @import "../Modules/mixins";
 .MainBoard {
   border-radius: 0.2rem;
-  padding: 1rem;
 }
 .Inner-Detail {
   @include Display;

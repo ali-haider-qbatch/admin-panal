@@ -114,7 +114,7 @@ function Dashboard() {
             <Box className="edit-button">FILTER NOW</Box>
           </Col>
         </Row>
-        <Box mt={4} className="MainBoard" bgcolor="#fff">
+        <Box mt={4} className="MainBoard" bgcolor="#fff" p={2}>
           <Row m={0}>
             <Col md={4}>
               <Box className="Inner-Detail border-right">

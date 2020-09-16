@@ -13,7 +13,7 @@ function Strategy() {
         <Heading Heading="Set Strategy" align="left" />
         <Row>
           <Col md={8}>
-            <Box className="Strategy" bgcolor="#fff">
+            <Box bgcolor="#fff" p={2.5}>
               <Row>
                 <Col md={6}>
                   <Form className="Strategy-Form">
